@@ -25,6 +25,14 @@ footer {
   padding: 2rem;
 }
 
+.saudacao {
+  font-size: 20px !important; 
+  display: block; 
+  margin: 0; 
+  padding: 0; 
+}
+
+
 h1,
 .declaration {
   margin: 0;
@@ -113,11 +121,11 @@ nav img {
 }
 
 .nav-menu.is-active {
- 
     top: 0;
     right: 0;
     width: 250px; 
     margin: 0;
+    font-size: 18px;
 
 }
 
@@ -844,10 +852,6 @@ footer span {
     font-size: 20px;
   }
 
-  .saudacao {
-    font-size: 20px;
-  }
-  
   #sobre .separator + div {
     width: 55%;
   }
