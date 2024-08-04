@@ -34,6 +34,7 @@ h1,
 
 h2 {
   font-family: "Satoshi 700";
+  font-size: 22px;
 }
 
 h3 {
@@ -253,9 +254,15 @@ main {
 
 #sobre {
   display: flex;
-  align-items: center;
-  padding-bottom: 10rem;
-  text-align: justify;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 720px) {
+  #sobre {
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
 }
 
 .separator {
@@ -376,7 +383,9 @@ main {
 .projeto-details-box {
   padding: 2.5rem;
   padding-bottom: 0;
-}
+  font-size: 16px; 
+  }
+  
 
 .projeto-main-info span,
 h3 {
