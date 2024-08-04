@@ -368,21 +368,19 @@ main {
   padding-bottom: 15rem;
 }
 
-.featured-projetos-box,
-.other-projetos-box {
+.featured-projetos-box {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  padding-bottom: 10rem;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 2rem;
 }
 
 .projeto {
   display: flex;
   flex-direction: column-reverse;
   max-width: 35rem;
-  max-height: 58rem;
+  max-height: 100rem;
   background: rgb(255, 255, 255, 0.1);
   box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
   border-radius: 1.2rem;
