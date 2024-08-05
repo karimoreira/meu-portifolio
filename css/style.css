@@ -104,7 +104,7 @@ nav img {
   position: fixed;
   display: flex;
   top: -2rem;
-  right: -200vh;
+  left: -200vh; 
   height: 100vh;
   width: 75vw;
 
@@ -121,12 +121,11 @@ nav img {
 }
 
 .nav-menu.is-active {
-    top: 0;
-    right: 0;
-    width: 250px; 
-    margin: 0;
-    font-size: 18px;
-
+  top: 0;
+  left: 0; 
+  width: 250px; 
+  margin: 0;
+  font-size: 18px;
 }
 
 .hamburger {
@@ -144,7 +143,7 @@ nav img {
 .hamburger.is-active {
   position: fixed;
   top: 2.3rem;
-  right: 2rem;
+  left: 2rem;
 }
 
 .menu-bar {
