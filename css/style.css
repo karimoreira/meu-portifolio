@@ -784,6 +784,11 @@ footer span {
     z-index: 1;
   }
 
+  body.high-contrast .projeto-main-info {
+    background-color: rgba(188, 199, 223, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.125); 
+  }
+
   .projeto-main-info::before {
     position: absolute;
     content: "";
