@@ -19,10 +19,16 @@ body {
 }
 
 /* modo alto contraste que criei*/
+
 body.high-contrast {
   background-color: #fff;
   color: #000;
 }
+
+body.high-contrast header {
+  border-bottom: none;
+}
+
 
 body.high-contrast .featured-projetos-box h3,
 body.high-contrast .projeto-main-info p > a,
@@ -65,22 +71,30 @@ body.high-contrast .hamburger .menu-bar::after {
 }
 
 #toggle-contrast {
-  position: fixed; 
-  top: 3rem; 
-  right: 18rem; 
-  background: none; 
-  border: none; 
-  cursor: pointer; 
+  position: fixed;
+  top: 3rem;
+  right: 3rem; 
+  background: none;
+  border: none;
+  cursor: pointer;
   padding: 0;
-  z-index: 1000; 
+  z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+  #toggle-contrast {
+    right: 2rem; 
+    top: 3rem;
+  }
 }
 
 #toggle-contrast img {
   width: 5rem; 
-  height: auto; 
+  height: auto;
 }
 
-/* */
+/* modo default - escuro */
 
 header,
 main,
@@ -125,7 +139,7 @@ h4 {
 }
 
 .featured-projetos-box h3 {
-  background-color: #1b728d;
+  background-color: #fff;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
