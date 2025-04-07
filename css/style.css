@@ -200,7 +200,7 @@ nav img {
 .nav-menu.is-active {
   top: 0;
   left: 0; 
-  width: 250px; 
+  width: 152px; 
   margin: 0;
   font-size: 18px;
 }
@@ -641,6 +641,40 @@ footer span {
 }
 
 
+@media (max-width: 720px) {
+
+  .projects-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+
+  .featured-projetos-box {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+ 
+  .projeto {
+    flex-direction: column !important;
+    margin-bottom: 3rem;
+  }
+
+
+  .projeto1 {
+    width: 100%;
+    max-width: 35rem; 
+  }
+}
+
+
+@media (max-width: 776px) {
+  .featured-projetos-box {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 720px) {
   body {
     display: flex;
@@ -990,4 +1024,5 @@ footer span {
   .cta2 {
     width: fit-content;
   }
+
 }
