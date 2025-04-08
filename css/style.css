@@ -219,7 +219,6 @@ nav img {
 }
 
 .hamburger.is-active {
-  position: fixed;
   top: 2.3rem;
   left: 2rem;
 }
