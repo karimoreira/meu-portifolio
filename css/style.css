@@ -198,6 +198,7 @@ nav img {
 }
 
 .nav-menu.is-active {
+  background-color: rgb(0, 0, 0);
   top: 0;
   left: 0; 
   width: 152px; 
