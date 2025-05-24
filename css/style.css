@@ -18,83 +18,59 @@ body {
   color: rgb(208, 212, 212);
 }
 
-/* modo alto contraste que criei*/
-
-body.high-contrast {
-  background-color: #fff;
-  color: #000;
-}
-
-body.high-contrast header {
-  border-bottom: none;
+.hamburger {
+  display: none;
 }
 
 
-body.high-contrast .featured-projetos-box h3,
-body.high-contrast .projeto-main-info p > a,
-body.high-contrast .projeto-tools p,
-body.high-contrast .side-projeto h3,
-body.high-contrast .side-projeto span,
-body.high-contrast .featured-projetos-box h3 {
-  background: none; 
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-  background-clip: initial;
-  color: #000;
-}
 
-body.high-contrast .projeto {
-  background: #fff; 
-  box-shadow: none;
-}
+@media screen and (max-width: 719px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -200vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 75vw;
+    background: #302f2f;
+    transition: left 0.3s ease-in-out;
+    z-index: 2;
+  }
 
-body.high-contrast .separator::after {
-  background-color: #000;
-}
+  .nav-menu.is-active {
+    left: 0;
+  }
 
-body.high-contrast .nav-menu {
-  background: #fff; 
-}
-
-body.high-contrast .nav-link a {
-  color: #000; 
-}
-
-body.high-contrast .declaration {
-  color: #000; 
-}
-
-body.high-contrast .hamburger .menu-bar,
-body.high-contrast .hamburger .menu-bar::before,
-body.high-contrast .hamburger .menu-bar::after {
-  background: #000; 
-}
-
-#toggle-contrast {
-  position: fixed;
-  top: 3rem;
-  right: 3rem; 
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1000;
-}
-
-
-@media (max-width: 768px) {
-  #toggle-contrast {
-    right: 2rem; 
-    top: 3rem;
+  .hamburger {
+    display: block;
   }
 }
 
-#toggle-contrast img {
-  width: 5rem; 
-  height: auto;
+@media screen and (min-width: 720px) {
+  .nav-menu {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    gap: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
 
-/* modo default - escuro */
+@media screen and (min-width: 720px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
 
 header,
 main,
@@ -168,9 +144,11 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 2rem;
 }
+
 
 nav img {
   width: 55px;
@@ -178,23 +156,12 @@ nav img {
 }
 
 .nav-menu {
-  position: fixed;
   display: flex;
-  top: -2rem;
-  left: -200vh; 
-  height: 100vh;
-  width: 75vw;
-
+  flex-direction: row;
+  gap: 2rem;
   list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  background: #302f2f;
-  transition: all 0.0s ease-in-out;
-  z-index: 2;
+ font-size: 20px;
+  margin-left: auto; 
 }
 
 .nav-menu.is-active {
@@ -530,44 +497,6 @@ h3 {
   gap: 2rem;
 }
 
-.side-projeto {
-  padding: 4.5rem 2.75rem;
-  max-width: 35rem;
-  background-color: rgb(255, 255, 255, 0.1);
-  box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.side-projeto > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 2rem;
-}
-
-.side-projeto img {
-  width: 3.5rem;
-}
-
-.side-projeto h3,
-.side-projeto span {
-  margin: 2.2rem 0 0;
-  background: -webkit-linear-gradient(
-    90.98deg,
-    rgba(24, 185, 207, 0.9) -2.14%,
-    #6688ff 103.54%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.side-projeto span {
-  font-family: "Satoshi 500";
-}
 
 #contact {
   display: flex;
@@ -743,9 +672,6 @@ footer span {
     justify-content: center;
   }
 
-  .side-projeto {
-    width: 35rem;
-  }
 
   #contact {
     margin: 3rem 0;
@@ -903,13 +829,6 @@ footer span {
     flex-flow: row;
   }
 
-  .side-projeto {
-    max-width: 33.33%;
-    background-color: rgb(255, 255, 255, 0.1);
-    box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
-    border-radius: 1rem;
-  }
-
   #contact div {
     width: 40vw;
     padding-right: 3rem;
@@ -956,9 +875,6 @@ footer span {
     width: 60rem;
   }
 
-  main .cta2 {
-    display: none;
-  }
 
   .declaration + p {
     width: 75%;
@@ -969,11 +885,6 @@ footer span {
     width: 55%;
   }
 
-  .side-projeto {
-    background-color: rgb(255, 255, 255, 0.1);
-    box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
-    border-radius: 1rem;
-  }
 
   #contact div {
     width: 43rem;
@@ -1011,14 +922,5 @@ footer span {
     height: 100%;
   }
 
-  .side-projeto {
-    background-color: rgb(255, 255, 255, 0.1);
-    box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
-    border-radius: 1rem;
-  }
-
-  .cta2 {
-    width: fit-content;
-  }
 
 }
