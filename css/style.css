@@ -145,6 +145,7 @@ main {
 }
 
 #sobre {
+  padding-top: 0 !important;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
