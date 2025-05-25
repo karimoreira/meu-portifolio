@@ -87,6 +87,10 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.projeto {
+   margin-bottom: 1rem; 
+}
+
 .featured-projetos-box h3 {
   background-color: #fff;
   -webkit-text-fill-color: transparent;
@@ -679,8 +683,6 @@ footer span {
     font-size: 20px;
   }
 
-
-
   #contact div {
     width: 43rem;
   }
@@ -703,10 +705,6 @@ footer span {
   h1,
   .declaration {
     font-size: 4rem;
-  }
-
-  .projeto {
-    height: 35rem;
   }
 
   .projeto-image-box {
