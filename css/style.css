@@ -341,11 +341,11 @@ h4 + p {
 }
 
 footer {
+  font-size: 20px;
   position: relative;
   width: 100%;
   padding: 1.5rem;
   text-align: center;
-  font-size: 1.6rem;
   color: #bbbbbb;
   margin-top: 3rem;
   border: none;
@@ -369,7 +369,7 @@ body.high-contrast footer {
   color: #000; 
 }
 
-footer span {
+footer a {
   background: linear-gradient(to right, #00f2fe, #4facfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -714,5 +714,15 @@ footer span {
   .projeto-image-box img {
     height: 100%;
   }
+
+.main-social-links img {
+  width: 50px;  
+  height: 50px;
+}
+
+.main-social-links img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
 
 }
