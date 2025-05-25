@@ -483,7 +483,6 @@ footer a {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     flex-direction: column;
     padding: 2rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     transform: translateX(100%); 
     opacity: 0;
     pointer-events: none;
