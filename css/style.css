@@ -12,13 +12,12 @@ body {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  font-family: sans-serif;
-  line-height: 1.5;
-  color: rgb(208, 212, 212);
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f5f5;
 }
 
-  .nav-menu {
+.nav-menu {
     flex-direction: row;
     gap: 1rem;
     font-size: 1.6rem;
@@ -53,6 +52,11 @@ footer {
   display: block; 
   margin: 0; 
   padding: 0; 
+}
+
+h1, h2, h3, h4 {
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -95,6 +99,8 @@ img {
 
 a {
   text-decoration: none;
+  color: #66fcf1;
+  transition: all 0.3s ease-in-out;
 }
 
 a > img {
@@ -114,13 +120,14 @@ main {
   align-items: center;
 }
 
-.name-highlight {
-  background: #1b728d;
-  ;
+ .name-highlight {
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #ff00cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: bold;
 }
+
 
 .declaration {
   margin: 0;
@@ -159,7 +166,8 @@ main {
   width: 5rem;
   height: 0.5rem;
   border-radius: 3.5rem;
-  background-color: rgb(31, 165, 218);
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  box-shadow: 0 0 10px #ff00cc, 0 0 15px #3333ff;
 }
 
 .sobre-text {
@@ -214,8 +222,8 @@ main {
   flex-direction: column-reverse;
   max-width: 35rem;
   max-height: 100rem;
-  background: rgb(255, 255, 255, 0.1);
-  box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1), 0 0 25px rgba(59, 130, 246, 0.2);
   border-radius: 1.2rem;
 }
 
@@ -234,11 +242,14 @@ h3 {
 
 .projeto-main-info p > a {
   font-family: "Satoshi 700";
-  color: rgb(29, 228, 255);
+  color: #66fcf1;
+  transition: all 0.3s ease-in-out;
 }
 
 .projeto-main-info p > a:hover {
   text-decoration: underline;
+    color: #ffffff;
+  text-shadow: 0 0 8px #66fcf1;
 }
 
 .projeto-links {
@@ -326,12 +337,28 @@ h4 + p {
 }
 
 footer {
+  position: relative;
   width: 100%;
-  padding: 1.2rem;
-  border-top: 0.1rem solid rgb(35, 73, 125);
-  font-size: 16px;
+  padding: 1.5rem;
   text-align: center;
-  color: rgb(208, 212, 212);
+  font-size: 1.6rem;
+  color: #bbbbbb;
+  margin-top: 3rem;
+  border: none;
+}
+
+footer::before {
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85vw;
+  max-width: 103rem; 
+  height: 2px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  box-shadow: 0 0 10px #4facfe, 0 0 20px #00f2fe;
+  border-radius: 50px;
 }
 
 body.high-contrast footer {
@@ -339,11 +366,7 @@ body.high-contrast footer {
 }
 
 footer span {
-  background: -webkit-linear-gradient(
-    90.98deg,
-    rgba(24, 185, 207, 0.9) -2.14%,
-    #6688ff 103.54%
-  );
+  background: linear-gradient(to right, #00f2fe, #4facfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -631,6 +654,8 @@ footer span {
 
   nav > a {
     display: block;
+    color: #66fcf1;
+  transition: all 0.3s ease-in-out;
   }
 
   .nav-menu {
@@ -691,6 +716,5 @@ footer span {
   .projeto-image-box img {
     height: 100%;
   }
-
 
 }
