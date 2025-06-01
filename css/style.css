@@ -1141,18 +1141,17 @@ footer a {
   }
 }
 
-/* minhas experiencias */
+/* incluindo minhas experiencias */
+
 .section-experiencias {
- font-family:"Satoshi 700";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 60px 20px;
   text-align: left;
 }
 
 .section-experiencias h2 {
-  font-size: 2em;
-
+  font-size: 3.2rem;
   margin-bottom: 20px;
-  color:  rgb(208, 212, 212);
 }
 
 .experience-container {
