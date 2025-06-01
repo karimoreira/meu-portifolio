@@ -1149,8 +1149,16 @@ footer a {
   text-align: left;
 }
 
+.section-experiencias .separator {
+  padding-bottom: 1rem;
+}
+
+.section-experiencias .experience-container > p {
+  margin-top: 4rem;
+}
+
 .section-experiencias h2 {
-  font-size: 3.2rem;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
