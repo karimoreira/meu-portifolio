@@ -427,7 +427,7 @@ footer {
     padding: 1.5rem;
     text-align: center;
     color: #bbbbbb;
-    margin-top: 60px;
+    margin-top: 80px;
     border: none;
 }
 
@@ -1077,85 +1077,6 @@ footer a {
 
 }
 
-/* mapa */
-
-#mapa-aracaju {
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 0 20px;
-}
-
-#mapa-aracaju .separator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-#mapa-aracaju .separator::after {
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-}
-
-#mapa-aracaju h2 {
-    font-size: 2.8rem;
-    color: #f5f5f5;
-    display: inline-block;
-    position: relative;
-}
-
-
-.map-caption {
-    margin-top: 25px;
-    font-style: italic;
-    color: #b0b0b0 !important;
-    font-size: 1.1em;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.map-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(102, 252, 241, 0.1);
-    background-color: rgba(15, 12, 41, 0.9);
-    transition: all 0.4s ease;
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: inherit;
-    filter: grayscale(15%) saturate(110%);
-}
-
-@media (max-width: 768px) {
-    .map-container {
-        padding-bottom: 70%;
-        border-radius: 8px;
- }
-}
 
 /* incluindo minhas experiencias */
 
