@@ -61,13 +61,17 @@ body {
     color: #f5f5f5;
     text-decoration: none;
     font-size: 1.8rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-      white-space: nowrap;
+    transition: color 0.3s ease, background 0.3s ease;
+    white-space: nowrap;
 }
 
 .nav-menu li a:hover {
-    color: #66fcf1;
-    text-shadow: 0 0 8px #66fcf1;
+    background: linear-gradient(90deg,  #6a6aff 8%, #ff66df 30%,  #ff66df 62%, #7f7fff 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
 }
 
 .nav-toggle {
@@ -451,6 +455,10 @@ body.high-contrast footer {
 
 footer a {
     background-clip: text;
+     background: linear-gradient(90deg,  #6a6aff 8%, #ff66df 30%,  #ff66df 62%, #7f7fff 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .contact-form {
@@ -939,7 +947,6 @@ footer a {
 }
 
 .submit-button {
-    background-color: #66fcf1;
     color: #0b0c10;
     padding: 16px 30px;
     border: none;
@@ -954,7 +961,7 @@ footer a {
 }
 
 .submit-button:hover {
-    background-color: #45a29e;
+     background: linear-gradient(90deg,  #6a6aff 8%, #ff66df 30%,  #ff66df 62%, #7f7fff 100% );
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
