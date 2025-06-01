@@ -1140,3 +1140,34 @@ footer a {
     border: 1.5px solid #66fcf1;
   }
 }
+
+/* minhas experiencias */
+.section-experiencias {
+ font-family:"Satoshi 700";
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.section-experiencias h2 {
+  font-size: 2em;
+
+  margin-bottom: 20px;
+  color:  rgb(208, 212, 212);
+}
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.experience-container ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.experience-container ul li {
+  margin-bottom: 12px;
+}
+
