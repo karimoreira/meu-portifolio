@@ -975,6 +975,7 @@ body.high-contrast footer {
 }
 
 .submit-button {
+    background-color: #f0f0f0;
     color: #0b0c10;
     padding: 16px 30px;
     border: none;
