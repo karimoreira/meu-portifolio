@@ -255,7 +255,7 @@ main {
 .sobre-text {
     padding-top: 12px;
     line-height: 1.6;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -911,7 +911,7 @@ body.high-contrast footer {
 .contact-text {
     max-width: 800px;
     margin: 0 auto 40px auto;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8;
     color: #ffffff;
     padding: 0 20px;
@@ -1047,7 +1047,7 @@ body.high-contrast footer {
     text-align: justify;
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
