@@ -256,6 +256,7 @@ main {
     padding-top: 12px;
     line-height: 1.6;
     font-size: 20px;
+    text-align: justify;
 }
 
 .sobre-text span {
@@ -1043,6 +1044,7 @@ body.high-contrast footer {
 }
 
 .experience-container {
+    text-align: justify;
     max-width: 1000px;
     margin: 0 auto;
     font-size: 20px;
