@@ -1064,3 +1064,26 @@ body.high-contrast footer {
         padding-bottom: 20px;
     }
 }
+
+.web-dev .skill-title h4,
+.database .skill-title h4,
+.cloud-services .skill-title h4,
+.infra-network-tools .skill-title h4,
+.version-control .skill-title h4 {
+  margin-bottom: 20px;
+}
+
+
+.web-dev,
+.database,
+.cloud-services,
+.infra-network-tools,
+.version-control {
+  margin-top: 40px;
+}
+
+
+.skill object[data*="helm"],
+.skill object[data*="wireshark"] {
+  filter: brightness(0) invert(1);
+}
