@@ -909,6 +909,7 @@ body.high-contrast footer {
 }
 
 .contact-text {
+    text-align: justify;
     max-width: 800px;
     margin: 0 auto 40px auto;
     font-size: 20px;
