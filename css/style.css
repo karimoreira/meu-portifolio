@@ -492,7 +492,7 @@ body.high-contrast footer {
     .nav-menu {
         position: fixed;
         right: 0;
-        top: 113px;
+        top: 77px;
         width: 55%;
         max-width: 300px;
         background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
