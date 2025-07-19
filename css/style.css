@@ -29,12 +29,13 @@ body {
     left: 0;
     width: 100%;
     background: rgba(15, 12, 41, 0.9);
-    padding: 15px 20px;
+    padding: 6px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    min-height: 48px;
 }
 
 .header-inner {
@@ -46,7 +47,7 @@ body {
 }
 
 .logo-img {
-    width: 80px;
+    width: 60px;
     height: auto;
     filter: brightness(0) invert(1);
 }
@@ -692,6 +693,12 @@ body.high-contrast footer {
     #contact div {
         width: 55vw;
         padding: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding-top: 180px; 
     }
 }
 
