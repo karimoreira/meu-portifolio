@@ -1115,22 +1115,14 @@ body.high-contrast footer {
 }
 
 .projeto-fundacao {
-    padding-bottom: 200px; 
+    padding-bottom: 200px;
 }
 
 .projeto-fundacao .projeto-image-box img {
     width: 100%;
-    height: auto; 
-    border-radius: 12px;
-    object-fit: contain; 
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: auto;
+    object-fit: contain;
 }
-
-.projeto-fundacao .projeto-image-box img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
-}
-
 
 @media screen and (max-width: 720px) {
     .projeto-fundacao .projeto-image-box {
