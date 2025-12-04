@@ -160,7 +160,7 @@ h1,
 .declaration {
     margin: 0;
     font-family: "GeneralSans 700";
-    font-size: 35px;
+    font-size: 28px;
 }
 
 h2 {
@@ -220,7 +220,6 @@ a>img:hover {
 
 .declaration {
     margin: 0;
-    font-size: 25px;
     line-height: 1.4;
     color: rgb(208, 212, 212);
 }
@@ -639,11 +638,6 @@ body.high-contrast footer {
         width: 470px;
     }
 
-    h1,
-    .declaration {
-        font-size: 35px;
-    }
-
     .main-social-links,
     .contact-social-links {
         display: flex;
@@ -718,10 +712,6 @@ body.high-contrast footer {
     }
 
     h2 {
-        font-size: 32px;
-    }
-
-    .declaration {
         font-size: 32px;
     }
 
@@ -860,7 +850,6 @@ body.high-contrast footer {
 
     .declaration+p {
         width: 75%;
-        font-size: 20px;
     }
 
     #contact div {
@@ -881,11 +870,6 @@ body.high-contrast footer {
 
     main>section {
         width: 650px;
-    }
-
-    h1,
-    .declaration {
-        font-size: 40px;
     }
 
     .projeto-image-box {
