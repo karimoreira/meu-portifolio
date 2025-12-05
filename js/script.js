@@ -12,7 +12,7 @@ if (projectsContainer) {
         deployLink: "https://desafio-tecnico-peach.vercel.app/pokedex.html",
         imgSrc: "https://raw.githubusercontent.com/karimoreira/desafio-tecnico/refs/heads/master/images/pokedex-lista.png",
         imgAlt: "Imagem da página com a lista de Pokémons",
-        customClass: "pokedex"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Cafeteria",
@@ -22,7 +22,7 @@ if (projectsContainer) {
         deployLink: "https://ctrl-coffee.onrender.com/",
         imgSrc: "img/frontcoffee.png",
         imgAlt: "Imagem da página inicial do projeto Ctrl+Coffee",
-        customClass: "projeto1"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Biblioteca",
@@ -33,7 +33,7 @@ if (projectsContainer) {
         deployText: "Biblioteca no ar",
         imgSrc: "img/bibliotecadelivros.png",
         imgAlt: "Imagem da aplicação da Biblioteca de Programação",
-        customClass: "projeto2"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Fandom",
@@ -42,7 +42,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/foundation-fan",
         imgSrc: "img/personagens-fundacao.png",
         imgAlt: "Fundação imagem",
-        customClass: ""
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Médico",
@@ -51,7 +51,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/Aplicacao-Medica-Agendei",
         imgSrc: "img/criarconta.png",
         imgAlt: "Imagem da aplicação médica",
-        customClass: "projeto3"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Java",
@@ -60,7 +60,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/sistema-java-desktop/",
         imgSrc: "img/cadastro.jpeg",
         imgAlt: "Sistema Java Desktop",
-        customClass: "projeto4"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Animação",
@@ -69,7 +69,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/sistema-solar",
         imgSrc: "img/sistemasolar.png",
         imgAlt: "Imagem do projeto Sistema Solar",
-        customClass: "projeto5"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Gamificado",
@@ -78,7 +78,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/habbitpet",
         imgSrc: "https://raw.githubusercontent.com/karimoreira/habbitpet/master/client/src/assets/screenshots/mascote.png",
         imgAlt: "App mascote motivacional",
-        customClass: "projeto6"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #Hospedagem",
@@ -87,7 +87,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/Site_Hospedagem_hDC_host",
         imgSrc: "img/hostsite.png",
         imgAlt: "Imagem do projeto de hospedagem",
-        customClass: "projeto7"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #MemoryGame",
@@ -96,7 +96,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/rick-morty-game",
         imgSrc: "img/jogodamemoria.png",
         imgAlt: "Jogo da memória",
-        customClass: "projeto8"
+        customClass: "projeto"
     },
     {
         tag: "Projeto #ClimaTempo",
@@ -105,7 +105,7 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/App-clima-tempo-API-OpenWeather?tab=readme-ov-file",
         imgSrc: "img/aju.png",
         imgAlt: "Projeto clima tempo",
-        customClass: "projeto9"
+        customClass: "projeto"
     }
 ]
 
