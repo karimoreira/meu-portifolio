@@ -5,4 +5,4 @@
 
 
 ## Site
-[Visite meu site hospedado na hostinger - Deploy Vercel](https://www.atiliodev.com/)
+[visite meu site hospedado na hostinger e deploy feito na Vercel](https://www.atiliodev.com/)
