@@ -15,7 +15,7 @@ if (projectsContainer) {
         customClass: "pokedex"
     },
     {
-        tag: "Projeto #1",
+        tag: "Projeto #Cafeteria",
         title: "Cafeteria Ctrl+Coffee",
         description: "O Ctrl+Coffee é uma aplicação completa para uma cafeteria de Aracaju, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Desenvolvido com foco em usabilidade e minimalismo, proporciona uma experiência real de navegação e interação com uma cafeteria online. Inclui vitrine de cafés, carrinho de compras, formulário para solicitação do pedido, finalização de pedido por e-mail e um formulário para contato. Desenvolvimento com: HTML5, CSS3, JavaScript, Node.js + express.js, Nodemailer e Unsplash.",
         repoLink: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
@@ -36,7 +36,7 @@ if (projectsContainer) {
         customClass: "projeto2"
     },
     {
-        tag: "Projeto #fandom",
+        tag: "Projeto #Fandom",
         title: "Foundation",
         description: "Este projeto foi criado como uma homenagem ao universo de Fundação, obra-prima de Isaac Asimov. Fui inspirado pela adaptação da Apple TV+, criando um pequeno fandom em React com personagens, Império Galáctico e psico-história de Hari Seldon.",
         repoLink: "https://github.com/karimoreira/foundation-fan",
@@ -45,7 +45,7 @@ if (projectsContainer) {
         customClass: ""
     },
     {
-        tag: "Projeto #Medico",
+        tag: "Projeto #Médico",
         title: "Agendamento Médico",
         description: "O desenvolvimento da aplicação Agendei foi uma experiência incrivelmente enriquecedora, que não só ampliou meus conhecimentos técnicos, mas também me proporcionou uma compreensão mais profunda sobre a importância de soluções na área da saúde. Este projeto é dividido em três partes: Agendei API, Agendei Mobile e Agendei Web. Tecnologias que usei para o processo: React + Vite, Expo Go, Postman, SQLite e APIs criadas.",
         repoLink: "https://github.com/karimoreira/Aplicacao-Medica-Agendei",
@@ -54,7 +54,7 @@ if (projectsContainer) {
         customClass: "projeto3"
     },
     {
-        tag: "Projeto #java",
+        tag: "Projeto #Java",
         title: "Gestão de Clientes",
         description: "Sistema desktop desenvolvido em Java para gestão de clientes em uma cafeteria. A aplicação oferece funcionalidades de CRUD, além de um sistema de autenticação com tela de login e criptografia de credenciais, garantindo segurança no acesso. Os dados são armazenados em um banco SQLite, utilizando JDBC para a comunicação. Padrão de arquitetura MVC presente promovendo organização, separação de responsabilidades e escalabilidade do código. O sistema também conta com filtros de busca, backup automatizado e geração de relatórios personalizados por meio da biblioteca JasperReports, permitindo a exportação e impressão de dados. A interface foi construída com Java Swing, apresentando o estilo visual clássico das aplicações Java desktop, priorizando clareza e funcionalidade, entregando uma experiência limpa, objetiva e eficiente para o usuário. Tecnologias: Java, Java Swing, SQLite com JDBC, JasperReports, Eclipse IDE, MVC.",
         repoLink: "https://github.com/karimoreira/sistema-java-desktop/",
@@ -72,7 +72,7 @@ if (projectsContainer) {
         customClass: "projeto5"
     },
     {
-        tag: "Projeto #gamificado",
+        tag: "Projeto #Gamificado",
         title: "Mascotinho Motivacional",
         description: "App web que incentiva o cumprimento de hábitos diários por meio de uma interface interativo que evolui conforme o progresso do usuário. implementei o cadastro e login com autenticação JWT, gerenciamento de hábitos com checklist, XP e evolução de nível e humor dinâmico do mascote. O frontend foi desenvolvido com React.js, utilizando Lottie para animações e Axios para comunicação com o backend. O backend usa Node.js com Express e MongoDB hospedado no MongoDB Atlas. As funcionalidades incluem troca entre três mascotes animados, notificações visuais de evolução de nível, histórico de hábitos e exclusão de metas completas, regras de progressão via backend.",
         repoLink: "https://github.com/karimoreira/habbitpet",
@@ -100,7 +100,7 @@ if (projectsContainer) {
     },
     {
         tag: "Projeto #ClimaTempo",
-        title: "Clima Tempo com OpenWeather API",
+        title: "Clima Tempo / OpenWeather API",
         description: "Com esse projeto trouxe condições climáticas de qualquer cidade do mundo utilizando várias APIs para fornecer informações como bandeiras dos países, imagens de fundo e dados meteorológicos, tudo em uma única interface. Muito desafiador e instigante!",
         repoLink: "https://github.com/karimoreira/App-clima-tempo-API-OpenWeather?tab=readme-ov-file",
         imgSrc: "img/aju.png",
