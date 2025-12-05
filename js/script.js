@@ -7,7 +7,7 @@ if (projectsContainer) {
     {
         tag: "Projeto #Pokédex",
         title: "Lista de Pokémons",
-        description: "A Pokédex foi desenvolvida com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>. É uma aplicação responsiva em desktop, tablet e mobile. A Pokedéx que desenvolvi consome a <strong>RESTful PokéAPI</strong> via requisições assíncronas (fetch) para renderizar de forma dinâmica as informações nos cards que desenvolvi. Implementei lógica de paginação com todos os pokémons da API, filtragem por tipos de Pokémon, uma busca eficiente e bastante manipulação do DOM.",
+        description: "A Pokédex foi desenvolvida com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>. É uma aplicação responsiva em desktop, tablet e mobile. A Pokedéx consome a <strong>RESTful PokéAPI</strong> via requisições assíncronas (fetch) para renderizar de forma dinâmica as informações nos cards. Implementei lógica de paginação com todos os pokémons da API, filtragem por tipos de Pokémon, uma busca eficiente e bastante manipulação do DOM.",
         repoLink: "https://github.com/karimoreira/desafio-tecnico/",
         deployLink: "https://desafio-tecnico-peach.vercel.app/pokedex.html",
         imgSrc: "https://raw.githubusercontent.com/karimoreira/desafio-tecnico/refs/heads/master/images/pokedex-lista.png",
@@ -36,15 +36,6 @@ if (projectsContainer) {
         customClass: "projeto"
     },
     {
-        tag: "Projeto #Fandom",
-        title: "Foundation",
-        description: "Este projeto foi criado como uma homenagem ao universo de Fundação, obra-prima de Isaac Asimov. Fui inspirado pela adaptação da Apple TV+, criando um pequeno fandom em React com personagens, Império Galáctico e psico-história de Hari Seldon.",
-        repoLink: "https://github.com/karimoreira/foundation-fan",
-        imgSrc: "img/personagens-fundacao.png",
-        imgAlt: "Fundação imagem",
-        customClass: "projeto"
-    },
-    {
         tag: "Projeto #Médico",
         title: "Agendamento Médico",
         description: "O desenvolvimento da aplicação Agendei foi uma experiência incrivelmente enriquecedora, que não só ampliou meus conhecimentos técnicos, mas também me proporcionou uma compreensão mais profunda sobre a importância de soluções na área da saúde. Este projeto é dividido em três partes: Agendei API, Agendei Mobile e Agendei Web. Tecnologias que usei para o processo: React + Vite, Expo Go, Postman, SQLite e APIs criadas.",
@@ -65,19 +56,10 @@ if (projectsContainer) {
     {
         tag: "Projeto #Animação",
         title: "Sistema Solar",
-        description: "O Sistema Solar é uma animação web criada com HTML5 e CSS3 para representar visualmente os planetas orbitando o Sol. O projeto simula o movimento orbital de todos os planetas do Sistema Solar, incluindo a nossa Lua orbitando a Terra. As órbitas são traçadas com efeitos de rotação e animação com CSS puro, com tamanhos e cores ajustados para uma boa representação visual de cada velocidade (não em escala física real). Cada planeta possui uma velocidade de rotação proporcional ao seu tempo orbital relativo. O objetivo é demonstrar de forma simples e interativa o funcionamento das órbitas planetárias usando recursos do front-end.",
+        description: "O Sistema Solar é uma animação web criada para representar visualmente os planetas orbitando o Sol. O projeto simula o movimento orbital de todos os planetas do Sistema Solar, incluindo a nossa Lua orbitando a Terra. As órbitas são traçadas com efeitos de rotação e animação com CSS puro, com tamanhos e cores ajustados para uma boa representação visual de cada velocidade (não em escala física real haha). Cada planeta possui uma velocidade de rotação proporcional ao seu tempo orbital relativo. O objetivo é demonstrar de forma simples e interativa o funcionamento das órbitas planetárias usando recursos do front-end.",
         repoLink: "https://github.com/karimoreira/sistema-solar",
         imgSrc: "img/sistemasolar.png",
         imgAlt: "Imagem do projeto Sistema Solar",
-        customClass: "projeto"
-    },
-    {
-        tag: "Projeto #Gamificado",
-        title: "Mascotinho Motivacional",
-        description: "App web que incentiva o cumprimento de hábitos diários por meio de uma interface interativo que evolui conforme o progresso do usuário. implementei o cadastro e login com autenticação JWT, gerenciamento de hábitos com checklist, XP e evolução de nível e humor dinâmico do mascote. O frontend foi desenvolvido com React.js, utilizando Lottie para animações e Axios para comunicação com o backend. O backend usa Node.js com Express e MongoDB hospedado no MongoDB Atlas. As funcionalidades incluem troca entre três mascotes animados, notificações visuais de evolução de nível, histórico de hábitos e exclusão de metas completas, regras de progressão via backend.",
-        repoLink: "https://github.com/karimoreira/habbitpet",
-        imgSrc: "https://raw.githubusercontent.com/karimoreira/habbitpet/master/client/src/assets/screenshots/mascote.png",
-        imgAlt: "App mascote motivacional",
         customClass: "projeto"
     },
     {
@@ -90,28 +72,28 @@ if (projectsContainer) {
         customClass: "projeto"
     },
     {
-        tag: "Projeto #MemoryGame",
-        title: "Memory Game - Rick and Morty",
-        description: "O \"Memory Game - Rick and Morty\" é um jogo de memória baseado na minha série de animação favorita: Rick and Morty. O jogo desafia os usuários a encontrar pares de cartas correspondentes, usando personagens da série. O jogo oferece uma experiência divertida e interativa enquanto testa a memória dos jogadores.",
-        repoLink: "https://github.com/karimoreira/rick-morty-game",
-        imgSrc: "img/jogodamemoria.png",
-        imgAlt: "Jogo da memória",
+        tag: "Projeto #Fandom",
+        title: "Foundation",
+        description: "Este projeto é uma homenagem ao universo de Fundação, obra-prima de Isaac Asimov. Inspirado pela adaptação da Apple TV+, criando um fandom em React com personagens, Império Galáctico e a psico-história de Hari Seldon.",
+        repoLink: "https://github.com/karimoreira/foundation-fan",
+        imgSrc: "img/personagens-fundacao.png",
+        imgAlt: "Fundação imagem",
         customClass: "projeto"
     },
     {
-        tag: "Projeto #ClimaTempo",
-        title: "Clima Tempo / OpenWeather API",
-        description: "Com esse projeto trouxe condições climáticas de qualquer cidade do mundo utilizando várias APIs para fornecer informações como bandeiras dos países, imagens de fundo e dados meteorológicos, tudo em uma única interface. Muito desafiador e instigante!",
-        repoLink: "https://github.com/karimoreira/App-clima-tempo-API-OpenWeather?tab=readme-ov-file",
-        imgSrc: "img/aju.png",
-        imgAlt: "Projeto clima tempo",
+        tag: "Projeto #MemoryGame",
+        title: "Memory Game - Rick and Morty",
+        description: "O \"Memory Game - Rick and Morty\" é um jogo de memória baseado na Rick and Morty. O jogo desafia os usuários a encontrar pares de cartas correspondentes, usando personagens da série. O jogo oferece uma experiência divertida e interativa enquanto testa a memória dos jogadores.",
+        repoLink: "https://github.com/karimoreira/rick-morty-game",
+        imgSrc: "img/jogodamemoria.png",
+        imgAlt: "Jogo da memória",
         customClass: "projeto"
     }
 ]
 
     let fullHTML = `
         <div class="separator">
-            <h2 class="projects-title">Alguns dos meus projetos:</h2>
+            <h2 class="projects-title">Alguns dos meus projetos pessoais:</h2>
         </div>
     `;
 
