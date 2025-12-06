@@ -49,16 +49,16 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(5, 5, 7, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
+  background: radial-gradient(circle at 50% 0%, rgba(49, 66, 94, 0.4) 0%, rgba(5, 5, 7, 0.8) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(49, 66, 94, 0.3);
   padding: 6px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   min-height: 48px;
 }
 
@@ -526,32 +526,32 @@ body.high-contrast footer {
     padding: 0 10px;
   }
 
-  .nav-menu {
+.nav-menu {
     position: fixed;
     right: 0;
     top: 80px;
     width: 70%;
     max-width: 300px;
-    background: rgba(14, 14, 18, 0.98);
-    backdrop-filter: blur(10px);
-    border-left: 1px solid var(--border);
+    background: radial-gradient(circle at 50% 0%, rgba(49, 66, 94, 0.95) 0%, rgba(12, 12, 18, 0.98) 80%);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px); 
+    border-left: 1px solid rgba(49, 66, 94, 0.3);
     flex-direction: column;
     padding: 20px 0;
     transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
     height: calc(100vh - 60px);
     overflow-y: auto;
     z-index: 1002;
-  }
+}
 
-  .nav-menu.active {
+.nav-menu.active {
     transform: translateX(0);
     opacity: 1;
     pointer-events: all;
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-  }
+}
 
   .nav-menu li {
     text-align: center;
