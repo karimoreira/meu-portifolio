@@ -474,34 +474,30 @@ h4 + p {
   padding: 10px 0 20px;
 }
 
-#contact > .main-social-links {
+ .main-social-links {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
 footer {
-  font-size: 18px;
+  font-size: 14px;
   position: relative;
   width: 100%;
   padding: 60px 15px 60px;
   text-align: center;
   margin-top: auto;
-  border-top: 1px solid var(--border);
-  background: #020203;
   font-weight: 500;
   box-sizing: border-box;
+  z-index: 10;
+  background: linear-gradient(to bottom, transparent 0%, #020203 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-.footer-rights {
-  font-size: 14px;
-  color: var(--text-dim);
-  margin-top: 20px;
-  display: block;
-}
-
-body.high-contrast footer {
-  color: #000;
+.grecaptcha-badge {
+    z-index: 1000 !important;
+    bottom: 150px !important; 
 }
 
 .contact-form {
