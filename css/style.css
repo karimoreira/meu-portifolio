@@ -20,9 +20,7 @@ body {
 }
 
 body {
-   background: radial-gradient(circle at 50% 0%, #253247 0%, #0c0c12 60%);
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #0c0c12; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-main);
   margin: 0;
@@ -30,6 +28,20 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative; 
+  z-index: 1; 
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, #31425e 0%, #0c0c12 60%);
+  z-index: -1; 
+  pointer-events: none; 
 }
 
 .header {
@@ -357,7 +369,7 @@ a > img:hover {
 }
 
 .projeto-main-info h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
   margin: 5px 0 10px 0;
   color: var(--text-main);
   letter-spacing: 0.5px;
