@@ -573,6 +573,10 @@ footer {
     padding: 0 10px;
   }
 
+  .btn-apresentacao:hover {
+    transform: none;
+  }
+
 .nav-menu {
     position: fixed;
     right: 0;
