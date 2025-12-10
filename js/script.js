@@ -19,7 +19,7 @@ if (projectsContainer) {
         title: "Cafeteria Ctrl+Coffee",
         description: "O Ctrl+Coffee é uma aplicação completa para uma cafeteria de Aracaju, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Desenvolvido com foco em usabilidade e minimalismo, proporciona uma experiência real de navegação e interação com uma cafeteria online. Inclui vitrine de cafés, carrinho de compras, formulário para solicitação do pedido, finalização de pedido por e-mail e um formulário para contato. Desenvolvimento com: HTML5, CSS3, JavaScript, Node.js + express.js, Nodemailer e Unsplash.",
         repoLink: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
-        deployLink: "https://ctrl-coffee.onrender.com/",
+        deployLink: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
         imgSrc: "img/frontcoffee.png",
         imgAlt: "Imagem da página inicial do projeto Ctrl+Coffee",
         customClass: "projeto"
