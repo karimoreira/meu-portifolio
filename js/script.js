@@ -4,17 +4,17 @@ const projectsContainer = document.querySelector('.featured-projetos-box')
 
 if (projectsContainer) {
     const projectsData = [
-    {
-        tag: "Projeto #Pokédex",
-        title: "Lista de Pokémons",
-        description: "A Pokédex foi desenvolvida com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>. É uma aplicação responsiva em desktop, tablet e mobile. A Pokedéx consome a <strong>RESTful PokéAPI</strong> via requisições assíncronas (fetch) para renderizar de forma dinâmica as informações nos cards. Implementei lógica de paginação com todos os pokémons da API, filtragem por tipos de Pokémon, uma busca eficiente e bastante manipulação do DOM.",
-        repoLink: "https://github.com/karimoreira/desafio-tecnico/",
-        deployLink: "https://desafio-tecnico-peach.vercel.app/pokedex.html",
-        imgSrc: "https://raw.githubusercontent.com/karimoreira/desafio-tecnico/refs/heads/master/images/pokedex-lista.png",
-        imgAlt: "Imagem da página com a lista de Pokémons",
+      {
+        tag: "Projeto #Site Space-X",
+        title: "landing page",
+        description: "Landing page inspirada na SpaceX, desenvolvida com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>. O projeto apresenta um layout moderno, responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando 5 seções com as informações dos últimos eventos da empresa, missões e foguetes.",
+        repoLink: "https://github.com/karimoreira/space-x-inspiracao",
+        deployLink: "https://github.com/karimoreira/space-x-inspiracao",
+        imgSrc: "https://raw.githubusercontent.com/karimoreira/space-x-inspiracao/refs/heads/master/assets/section1.png",
+        imgAlt: "Imagem da Landing Page",
         customClass: "projeto"
     },
-    {
+     {
         tag: "Projeto #Cafeteria",
         title: "Cafeteria Ctrl+Coffee",
         description: "O Ctrl+Coffee é uma aplicação completa para uma cafeteria de Aracaju, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Desenvolvido com foco em usabilidade e minimalismo, proporciona uma experiência real de navegação e interação com uma cafeteria online. Inclui vitrine de cafés, carrinho de compras, formulário para solicitação do pedido, finalização de pedido por e-mail e um formulário para contato. Desenvolvimento com: HTML5, CSS3, JavaScript, Node.js + express.js, Nodemailer e Unsplash.",
@@ -25,14 +25,14 @@ if (projectsContainer) {
         customClass: "projeto"
     },
     {
-        tag: "Projeto #Biblioteca",
-        title: "Biblioteca de Programação Online",
-        description: "Este projeto é uma aplicação web que permite acessar, pesquisar e navegar por uma coleção de livros de programação. A ideia é democratizar o acesso ao conhecimento técnico, disponibilizando materiais em PDF de forma simples e organizada. A aplicação carrega automaticamente os livros disponíveis no diretório, gera um arquivo com os metadados e exibe os livros em uma interface web paginada com busca em tempo real. Tecnologias: HTML5, CSS3, JavaScript, Python 3 e JSON.",
-        repoLink: "https://github.com/karimoreira/biblioteca-livros-online",
-        deployLink: "https://biblioteca-programacao.vercel.app/",
-        deployText: "Biblioteca no ar",
-        imgSrc: "img/bibliotecadelivros.png",
-        imgAlt: "Imagem da aplicação da Biblioteca de Programação",
+        tag: "Projeto #Pokédex",
+        title: "Lista de Pokémons",
+        description: "A Pokédex foi desenvolvida com <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>. É uma aplicação responsiva em desktop, tablet e mobile. A Pokedéx consome a <strong>RESTful PokéAPI</strong> via requisições assíncronas (fetch) para renderizar de forma dinâmica as informações nos cards. Implementei lógica de paginação com todos os pokémons da API, filtragem por tipos de Pokémon, uma busca eficiente e bastante manipulação do DOM.",
+        repoLink: "https://github.com/karimoreira/desafio-tecnico/",
+        deployLink: "https://desafio-tecnico-peach.vercel.app/pokedex.html",
+        deployText: "Veja no ar",
+        imgSrc: "https://raw.githubusercontent.com/karimoreira/desafio-tecnico/refs/heads/master/images/pokedex-lista.png",
+        imgAlt: "Imagem da página com a lista de Pokémons",
         customClass: "projeto"
     },
     {
@@ -42,6 +42,17 @@ if (projectsContainer) {
         repoLink: "https://github.com/karimoreira/Aplicacao-Medica-Agendei",
         imgSrc: "img/criarconta.png",
         imgAlt: "Imagem da aplicação médica",
+        customClass: "projeto"
+    },
+     {
+        tag: "Projeto #Biblioteca",
+        title: "Biblioteca de Programação Online",
+        description: "Este projeto é uma aplicação web que permite acessar, pesquisar e navegar por uma coleção de livros de programação. A ideia é democratizar o acesso ao conhecimento técnico, disponibilizando materiais em PDF de forma simples e organizada. A aplicação carrega automaticamente os livros disponíveis no diretório, gera um arquivo com os metadados e exibe os livros em uma interface web paginada com busca em tempo real. Tecnologias: HTML5, CSS3, JavaScript, Python 3 e JSON.",
+        repoLink: "https://github.com/karimoreira/biblioteca-livros-online",
+        deployLink: "https://biblioteca-programacao.vercel.app/",
+        deployText: "Veja no ar",
+        imgSrc: "img/bibliotecadelivros.png",
+        imgAlt: "Imagem da aplicação da Biblioteca de Programação",
         customClass: "projeto"
     },
     {
@@ -100,7 +111,7 @@ if (projectsContainer) {
     const projectsCards = projectsData.map(project => {
         const deployBtn = project.deployLink
             ? `<a href="${project.deployLink}" target="_blank">
-                    <span>${project.deployText || 'Deploy da aplicação'}</span>
+                    <span>${project.deployText || ''}</span>
                 </a>`
             : '';
 
