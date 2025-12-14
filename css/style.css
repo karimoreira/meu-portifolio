@@ -1125,3 +1125,37 @@ footer {
 .skill object[data*="amazonwebservices"] {
   filter: brightness(0) invert(1);
 }
+
+@media screen and (min-width: 721px) and (max-width: 1023px) {
+
+  .featured-projetos-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+    align-items: stretch; 
+  }
+
+  .projeto {
+    width: 48%;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse; 
+    justify-content: space-between; 
+  }
+
+  .projeto-image-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end; 
+  }
+ 
+   a > img:hover {
+
+    transform: none;
+    transition: none;
+   }
+
+}
