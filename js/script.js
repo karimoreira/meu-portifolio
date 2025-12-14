@@ -115,30 +115,30 @@ const projectsSlides = projectsData.map(project => {
         : '';
 
     return `
-        <div class="swiper-slide">
-            <div class="projeto ${project.customClass || ''}">
-                <div class="projeto-details-box">
-                    <div class="projeto-main-info">
-                        <span>${project.tag}</span>
-                        <h3>${project.title}</h3>
-                        <p style="text-align: justify;">
-                            ${project.description}
-                        </p>
-                        <div class="projeto-links">
-                            <a href="${project.repoLink}" target="_blank">
-                                <img src="img/github.svg" alt="Link para o repositório" />
-                            </a>
-                            ${deployBtn}
-                        </div>
-                    </div>
-                    </div>
-                <div class="projeto-image-box">
-                    <a href="${project.deployLink || project.repoLink}" target="_blank" class="projeto-img-link">
-                        <img src="${project.imgSrc}" alt="${project.imgAlt}" loading="lazy" />
-                    </a>
-                </div>
+    <div class="swiper-slide">
+    <div class="projeto ${project.customClass || ''}">
+        <div class="projeto-details-box">
+        <div class="projeto-main-info">
+            <span>${project.tag}</span>
+            <h3>${project.title}</h3>
+            <p style="text-align: justify;">
+                ${project.description}
+            </p>
+            <div class="projeto-links">
+                <a href="${project.repoLink}" target="_blank">
+                    <img src="img/github.svg" alt="Link para o repositório" />
+                </a>
+                ${deployBtn}
             </div>
         </div>
+        </div>
+        <div class="projeto-image-box">
+            <a href="${project.deployLink || project.repoLink}" target="_blank" class="projeto-img-link">
+                <img src="${project.imgSrc}" alt="${project.imgAlt}" loading="lazy" />
+            </a>
+        </div>
+    </div>
+    </div>
     `;
 }).join('');
 
@@ -155,28 +155,42 @@ projectsContainer.innerHTML = `
     </div>
 `;
 
+let portfolioSwiper;
+
+function initPortfolioSwiper() {
+  const isDesktop = window.innerWidth >= 721;
+
+  if (portfolioSwiper) {
+    portfolioSwiper.destroy(true, true);
+  }
+
+portfolioSwiper = 
 new Swiper('.myPortfolioSwiper', {
+effect: 'slide',
+speed: 600,
+grabCursor: true,
+autoHeight: true,
+slidesPerView: 1,
+spaceBetween: isDesktop ? 0 : 30,
+centeredSlides: !isDesktop,
+loop: !isDesktop,
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
 
-    effect: 'slide', 
-    speed: 600,
-    
-    loop: true,
-    grabCursor: true,
-    autoHeight: true, 
+navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+}}
+)}
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+initPortfolioSwiper();
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    slidesPerView: 1,
-    spaceBetween: 30, 
-    centeredSlides: true,
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(initPortfolioSwiper, 300);
 })
 }
 
@@ -200,10 +214,10 @@ navToggle.addEventListener('click', () => {
 if (navMenu) {
 navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active')
-            navToggle.classList.remove('open')
-        }
+    if (navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active')
+        navToggle.classList.remove('open')
+    }
     })
 })
 }
@@ -223,57 +237,57 @@ const formStatus = document.getElementById('formStatus')
 
 if (contactForm && formStatus) {
 contactForm.addEventListener('submit', async (event) => {
-    event.preventDefault()
+event.preventDefault()
 
-    formStatus.textContent = 'Verificando segurança...'
-    formStatus.className = 'form-status';
+formStatus.textContent = 'Verificando segurança...'
+formStatus.className = 'form-status';
 
-    if (typeof grecaptcha !== 'undefined' && grecaptcha.ready) {
-        try {
-            const token = await grecaptcha.execute('6Lfv7EgrAAAAAMJQJ5FGb7eTxnVBP4q4F6BnyvYT', 
-                { action: 
-                'submit_form'
-            })
+if (typeof grecaptcha !== 'undefined' && grecaptcha.ready) {
+    try {
+    const token = await grecaptcha.execute('6Lfv7EgrAAAAAMJQJ5FGb7eTxnVBP4q4F6BnyvYT', 
+        { action: 
+        'submit_form'
+    })
 
-            const formData = new FormData(contactForm)
-            formData.append('g-recaptcha-response', token)
+    const formData = new FormData(contactForm)
+    formData.append('g-recaptcha-response', token)
 
-            formStatus.textContent = 'Enviando...'
+    formStatus.textContent = 'Enviando...'
 
-            const response = await fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
+    const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
 
-                }
-            });
-
-            if (response.ok) {
-                formStatus.textContent = 'Mensagem enviada com sucesso! Em breve entrarei em contato.'
-                formStatus.classList.add('success')
-                contactForm.reset()
-            } else {
-                const data = await response.json()
-                if (data.errors) {
-                    formStatus.textContent = data.errors.map(error => error.message).join(', ')
-                } else if (data.message) {
-                    formStatus.textContent = 'Erro: ' + data.message
-                } 
-                else {
-                    formStatus.textContent = 'Ocorreu um erro ao enviar a mensagem.'
-                }
-                formStatus.classList.add('error')
-            }
-        } catch (error) {
-            formStatus.textContent = 'Não foi possível enviar. Tente novamente mais tarde.'
-            formStatus.classList.add('error')
         }
+    });
 
+    if (response.ok) {
+        formStatus.textContent = 'Mensagem enviada com sucesso! Em breve entrarei em contato.'
+        formStatus.classList.add('success')
+        contactForm.reset()
     } else {
-        formStatus.textContent = 'Erro. Por favor, recarregue a página e tente novamente.'
+        const data = await response.json()
+        if (data.errors) {
+            formStatus.textContent = data.errors.map(error => error.message).join(', ')
+        } else if (data.message) {
+            formStatus.textContent = 'Erro: ' + data.message
+        } 
+        else {
+            formStatus.textContent = 'Ocorreu um erro ao enviar a mensagem.'
+        }
         formStatus.classList.add('error')
     }
+} catch (error) {
+    formStatus.textContent = 'Não foi possível enviar. Tente novamente mais tarde.'
+    formStatus.classList.add('error')
+}
+
+} else {
+    formStatus.textContent = 'Erro. Por favor, recarregue a página e tente novamente.'
+    formStatus.classList.add('error')
+}
 })
 }
 })
