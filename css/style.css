@@ -356,25 +356,27 @@ a > img:hover {
 }
 
 .skill {
-  width: 100px;
-  height: 20px;
-  display: inline-block;
+  width: 85px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   line-height: 20px;
+  margin: 10px 0;
+}
+
+.skill object,
+.skill img {
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .skill div {
-  font-size: 18px;
-  margin-top: 5px;
+  font-size: 14px;
+  margin-top: 8px;
   color: var(--text-dim);
 }
 
-
-#habilidades {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 150px;
-}
 
 .featured-projetos-box {
   display: flex;
@@ -1107,6 +1109,14 @@ footer {
 .version-control,
 .ci-cd {
   margin-top: 40px;
+  display: flex;     
+  flex-wrap: wrap;   
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.skill-title {
+  width: 100%;
 }
 
 .skill object[data*="helm"],
@@ -1115,4 +1125,3 @@ footer {
 .skill object[data*="amazonwebservices"] {
   filter: brightness(0) invert(1);
 }
-
