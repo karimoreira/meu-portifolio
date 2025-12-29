@@ -6,8 +6,8 @@ export default function Contact() {
   const [state, handleSubmitSpree] = useForm("xnnvqqbl");
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useHookForm();
 
-  const onSubmit = (data) => {
-    handleSubmitSpree(data);
+  const onSubmit = (data, event) => {
+    handleSubmitSpree(event);
   };
 
   if (state.succeeded) {
@@ -44,35 +44,42 @@ export default function Contact() {
           <div>
             <label className="form-label">Nome</label>
             <input 
-              {...register("name", { required: true })}
+              {...register("name", { required: "Nome é obrigatório" })}
               type="text" 
               className="form-input"
               placeholder="Seu nome"
             />
-            {errors.name && <span className="form-error">Nome é obrigatório</span>}
+            {errors.name && <span className="form-error">{errors.name.message}</span>}
             <ValidationError prefix="Name" field="name" errors={state.errors} className="form-error" />
           </div>
           
           <div>
             <label className="form-label">E-mail</label>
             <input 
-              {...register("email", { required: true })}
+              {...register("email", { 
+                required: "Email é obrigatório",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "Email inválido"
+                }
+              })}
               type="email" 
               className="form-input"
               placeholder="seu@email.com"
             />
-            {errors.email && <span className="form-error">Email é obrigatório</span>}
+            {errors.email && <span className="form-error">{errors.email.message}</span>}
             <ValidationError prefix="Email" field="email" errors={state.errors} className="form-error" />
           </div>
 
           <div>
             <label className="form-label">Mensagem</label>
             <textarea 
-              {...register("message", { required: true })}
+              {...register("message", { required: "Mensagem é obrigatória" })}
               rows="5"
               className="form-textarea"
               placeholder="Como posso te ajudar?"
             ></textarea>
+            {errors.message && <span className="form-error">{errors.message.message}</span>}
             <ValidationError prefix="Message" field="message" errors={state.errors} className="form-error" />
           </div>
 
