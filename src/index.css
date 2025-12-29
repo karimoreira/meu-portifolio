@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;600;700&display=swap');
 
 :root {
   --color-background: #050507;
@@ -375,7 +374,7 @@ ul {
 
   .hero-grid > div:last-child {
     width: 100%;
-    font-size: 0.75rem !important; 
+    font-size: 0.875rem !important; 
     margin-top: 1rem;
   }
 
@@ -609,7 +608,7 @@ ul {
 
   .code-card {
     padding: 1rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     width: 100%;
     box-sizing: border-box;
   }
@@ -695,7 +694,7 @@ ul {
   background-color: var(--color-surface);
   border-radius: 50%;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -703,7 +702,16 @@ ul {
 
 .project-link.github { color: var(--color-secondary); }
 .project-link.deploy { color: var(--color-primary); }
-.project-link:hover { color: white; }
+
+.project-link.github:hover { 
+  background-color: var(--color-secondary); 
+  color: white; 
+}
+
+.project-link.deploy:hover { 
+  background-color: var(--color-primary); 
+  color: white; 
+}
 
 .project-content {
   padding: 1.5rem;
@@ -713,7 +721,7 @@ ul {
 }
 
 .project-tag {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-family: 'Fira Code', monospace;
   color: var(--color-secondary);
   margin-bottom: 0.5rem;
@@ -746,7 +754,7 @@ ul {
 }
 
 .project-tech-item {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   background-color: var(--color-surface-highlight);
@@ -959,6 +967,8 @@ ul {
 
 .footer-name {
   color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
 }
 
 .hover-underline {
@@ -984,7 +994,7 @@ ul {
 
 .recaptcha-legal-text a {
   color: var(--color-secondary);
-  text-decoration: none;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 

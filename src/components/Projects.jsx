@@ -17,10 +17,13 @@ export default function Projects() {
                   src={project.image} 
                   alt={project.title} 
                   className="project-image" 
+                  loading="lazy"
+                  width="600"
+                  height="400"
                 />
                 <div className="project-overlay">
-                  <a href={project.repo} target="_blank" className="project-link github"><Github size={20}/></a>
-                  {project.deploy && <a href={project.deploy} target="_blank" className="project-link deploy"><ExternalLink size={20}/></a>}
+                  <a href={project.repo} target="_blank" rel="noopener noreferrer" className="project-link github" aria-label={`Ver código fonte de ${project.title}`}><Github size={20}/></a>
+                  {project.deploy && <a href={project.deploy} target="_blank" rel="noopener noreferrer" className="project-link deploy" aria-label={`Ver deploy de ${project.title}`}><ExternalLink size={20}/></a>}
                 </div>
               </div>
               

@@ -31,13 +31,13 @@ export default function Hero() {
             </a>
           </div>
           <div className="social-links">
-            <a href={personalData.social.github} target="_blank" className="social-icon hover-gray">
+            <a href={personalData.social.github} target="_blank" rel="noopener noreferrer" className="social-icon hover-gray" aria-label="GitHub">
               <Github />
             </a>
-            <a href={personalData.social.linkedin} target="_blank" className="social-icon hover-purple">
+            <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon hover-purple" aria-label="LinkedIn">
               <Linkedin />
             </a>
-            <a href={personalData.social.email} className="social-icon hover-cyan">
+            <a href={personalData.social.email} className="social-icon hover-cyan" aria-label="Email">
               <Mail />
             </a>
           </div>

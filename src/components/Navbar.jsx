@@ -22,11 +22,11 @@ export default function Navbar({ theme, setTheme }) {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo" onClick={() => window.scrollTo(0,0)}>
+        <a href="#" className="navbar-logo" onClick={(e) => { e.preventDefault(); window.scrollTo(0,0); }} aria-label="Voltar ao topo">
           <span className="navbar-title">
             ATILIO<span className="navbar-title-highlight">DEV</span>
           </span>
-        </div>
+        </a>
         
         <div className="desktop-menu">
           {links.map((link, index) => (
