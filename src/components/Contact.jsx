@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { CheckCircle, AlertCircle } from 'lucide-react';
 
@@ -7,16 +7,6 @@ export default function Contact() {
   const [status, setStatus] = useState({ type: '', message: '' });
 
   const RECAPTCHA_SITE_KEY = '6Lfv7EgrAAAAAMJQJ5FGb7eTxnVBP4q4F6BnyvYT'; 
-
-  useEffect(() => {
-
-    if (!window.grecaptcha) {
-      const script = document.createElement('script');
-      script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
 
   const onSubmit = async (data) => {
     setStatus({ type: 'loading', message: 'Verificando segurança...' });
