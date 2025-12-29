@@ -41,7 +41,7 @@ export const projects = [
     id: 1,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
-    description: "Landing page inspirada na SpaceX. O projeto apresenta um layout moderno, responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes.",
+    description: "Landing page inspirada na SpaceX. O projeto apresenta um layout moderno, responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     repo: "https://github.com/karimoreira/space-x-inspiracao",
     deploy: "https://github.com/karimoreira/space-x-inspiracao",
