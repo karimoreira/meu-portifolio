@@ -115,15 +115,6 @@ export const projects = [
   },
   {
     id: 9,
-    tag: "Fandom",
-    title: "Foundation Fan Page",
-    description: "Homenagem ao universo de Fundação de Isaac Asimov. Inspirado pela série da Apple TV+, apresentando personagens, Império Galáctico e conceitos da psico-história.",
-    tech: ["React", "CSS Modules", "Frontend"],
-    repo: "https://github.com/karimoreira/foundation-fan",
-    image: "img/personagens-fundacao.png"
-  },
-  {
-    id: 10,
     tag: "Game",
     title: "Memory Game Rick & Morty",
     description: "Jogo de memória temático desafiando usuários a encontrar pares de cartas dos personagens da série. Experiência divertida e interativa para testar a memória.",
