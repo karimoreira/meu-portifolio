@@ -922,5 +922,27 @@ ul {
 
 
 .grecaptcha-badge {
-  z-index: 10000;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2147483647 !important;
+  display: block !important;
+}
+
+.recaptcha-legal-text {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.recaptcha-legal-text a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.recaptcha-legal-text a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }
