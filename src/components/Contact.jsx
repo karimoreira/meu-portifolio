@@ -6,8 +6,8 @@ export default function Contact() {
   const [state, handleSubmitSpree] = useForm("xnnvqqbl");
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useHookForm();
 
-  const onSubmit = (data, event) => {
-    handleSubmitSpree(event);
+  const onSubmit = (data) => {
+    handleSubmitSpree(data);
   };
 
   if (state.succeeded) {
