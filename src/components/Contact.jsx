@@ -68,6 +68,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
+        <h2 className="section-title" style={{justifyContent: 'center'}}>Contato</h2>
         <p className="contact-text">
           Tem interesse em desenvolver um projeto ou solucionar demandas específicas? Preencha o formulário e retornarei com as informações necessárias.
         </p>
@@ -126,7 +127,7 @@ export default function Contact() {
             {status.type === 'loading' ? status.message : 'Enviar Mensagem'}
           </button>
           <p className="recaptcha-legal-text">
-            Este portfolio é protegido por reCAPTCHA, a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> e os <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Termos de Serviço</a> do Google se aplicam.
+            Este portfólio é protegido por reCAPTCHA, a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> e os <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Termos de Serviço</a> do Google se aplicam.
           </p>
 
           {status.type === 'error' && (

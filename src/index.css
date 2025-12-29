@@ -347,9 +347,7 @@ ul {
     font-size: 2.5rem !important; 
   }
 
-  .hero-section {
-    padding-top: 10rem !important;
-  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -381,42 +379,12 @@ ul {
     margin-top: 1rem;
   }
 
-
-  h1 {
-    font-size: 2rem !important; 
-    line-height: 1.2;
-  }
-  
-  h2 {
-    font-size: 1.5rem !important;
-    text-align: center; 
-    justify-content: center;
-  }
-  
-  p {
-    font-size: 0.95rem !important;
-  }
-
-  form {
-    padding: 1.5rem !important; 
-  }
-
-  .hero-section {
+    .hero-section {
     padding-top: 10rem !important;
   }
+
 }
 
-@media screen and (max-width: 480px) {
-  .hero-grid > div:first-child > div:nth-of-type(1) {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .hero-grid a {
-    width: 100%;
-    justify-content: center;
-  }
-}
 
 
 .hero-section {
@@ -424,7 +392,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 4rem;
+  padding-top: 60px;
   position: relative;
   overflow: hidden;
   background-color: var(--color-background);
@@ -446,6 +414,7 @@ ul {
 
 
 .hero-greeting {
+  font-size: 20px;
   font-family: 'Fira Code', monospace;
   color: var(--color-secondary);
   margin-top: 2rem; 
@@ -552,6 +521,10 @@ ul {
   margin-bottom: 1rem;
 }
 
+.code-content {
+  font-size: 14px;
+}
+
 .dot {
   width: 0.75rem;
   height: 0.75rem;
@@ -595,6 +568,20 @@ ul {
     align-items: center;
   }
 
+  
+  .hero-title {
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-role {
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
 
   .hero-actions {
     display: flex;
@@ -636,7 +623,7 @@ ul {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 3rem;
   display: flex;
@@ -832,7 +819,7 @@ ul {
 }
 
 .contact-section {
-  padding: 60px 0;
+  padding: 80px 0 60px 0;
   background-color: var(--color-background);
   color: var(--color-text);
 }
@@ -957,6 +944,19 @@ ul {
   background-color: var(--color-surface);
 }
 
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.copyright-symbol {
+  font-size: 22px;
+  line-height: 1;
+  display: inline-block;
+}
+
 .footer-name {
   color: var(--color-text);
 }
@@ -975,7 +975,7 @@ ul {
 }
 
 .recaptcha-legal-text {
-  font-size: 0.7rem;
+  font-size: 14px;
   color: var(--color-muted);
   margin-top: 1rem;
   text-align: center;
