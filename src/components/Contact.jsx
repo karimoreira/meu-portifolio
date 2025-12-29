@@ -135,6 +135,9 @@ export default function Contact() {
           >
             {status.type === 'loading' ? status.message : 'Enviar Mensagem'}
           </button>
+          <p className="recaptcha-legal-text">
+            Este portfolio é protegido por reCAPTCHA, a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> e os <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Termos de Serviço</a> do Google se aplicam.
+          </p>
 
           {status.type === 'error' && (
             <div className="mt-4 p-3 bg-red-100 text-red-700 rounded flex items-center gap-2">

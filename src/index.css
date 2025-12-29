@@ -921,3 +921,6 @@ ul {
 }
 
 
+.grecaptcha-badge {
+  z-index: 10000;
+}
