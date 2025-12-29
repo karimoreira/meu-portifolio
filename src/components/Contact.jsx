@@ -1,34 +1,74 @@
-import { useForm, ValidationError } from '@formspree/react';
-import { useForm as useHookForm } from 'react-hook-form';
-import { Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { useForm } from 'react-hook-form';
+import { CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function Contact() {
-  const [state, handleSubmitSpree] = useForm("xnnvqqbl");
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useHookForm();
+  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
+  const [status, setStatus] = useState({ type: '', message: '' });
 
-  const onSubmit = (data, e) => {
-    const formEvent = {
-      preventDefault: () => {},
-      currentTarget: e.target,
-      target: e.target
-    };
-    handleSubmitSpree(formEvent);
+  const RECAPTCHA_SITE_KEY = '6Lfv7EgrAAAAAMJQJ5FGb7eTxnVBP4q4F6BnyvYT'; 
+
+  useEffect(() => {
+
+    if (!window.grecaptcha) {
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const onSubmit = async (data) => {
+    setStatus({ type: 'loading', message: 'Verificando segurança...' });
+
+    try {
+      if (!window.grecaptcha) {
+        throw new Error('reCAPTCHA não carregado. Por favor, recarregue a página.');
+      }
+
+      const token = await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'submit' });
+
+      setStatus({ type: 'loading', message: 'Enviando...' });
+
+      const response = await fetch('https://formspree.io/f/mykynbqp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          ...data,
+          'g-recaptcha-response': token
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus({ type: 'success', message: 'Mensagem enviada com sucesso! Em breve entrarei em contato.' });
+        reset();
+      } else {
+        if (result.errors) {
+          const errorMessages = result.errors.map(err => err.message).join(', ');
+          setStatus({ type: 'error', message: errorMessages });
+        } else {
+          setStatus({ type: 'error', message: 'Ocorreu um erro ao enviar a mensagem.' });
+        }
+      }
+    } catch (error) {
+      console.error('Erro no envio:', error);
+      setStatus({ type: 'error', message: 'Não foi possível enviar. Tente novamente mais tarde.' });
+    }
   };
 
-  if (state.succeeded) {
+  if (status.type === 'success') {
     return (
       <section id="contact" className="contact-section">
         <div className="contact-container">
           <div className="p-6 bg-green-100 text-green-700 rounded-lg flex flex-col items-center gap-4 text-center">
             <CheckCircle size={48} />
             <h3 className="text-xl font-bold">Mensagem enviada!</h3>
-            <p>Obrigado pelo contato. Retornarei em breve.</p>
-            <button 
-              onClick={() => window.location.reload()} 
-              className="form-button mt-4"
-            >
-              Enviar nova mensagem
-            </button>
+            <p>{status.message}</p>
           </div>
         </div>
       </section>
@@ -53,9 +93,9 @@ export default function Contact() {
               type="text" 
               className="form-input"
               placeholder="Seu nome"
+              disabled={isSubmitting}
             />
             {errors.name && <span className="form-error">{errors.name.message}</span>}
-            <ValidationError prefix="Name" field="name" errors={state.errors} className="form-error" />
           </div>
           
           <div>
@@ -71,9 +111,9 @@ export default function Contact() {
               type="email" 
               className="form-input"
               placeholder="seu@email.com"
+              disabled={isSubmitting}
             />
             {errors.email && <span className="form-error">{errors.email.message}</span>}
-            <ValidationError prefix="Email" field="email" errors={state.errors} className="form-error" />
           </div>
 
           <div>
@@ -83,23 +123,23 @@ export default function Contact() {
               rows="5"
               className="form-textarea"
               placeholder="Como posso te ajudar?"
+              disabled={isSubmitting}
             ></textarea>
             {errors.message && <span className="form-error">{errors.message.message}</span>}
-            <ValidationError prefix="Message" field="message" errors={state.errors} className="form-error" />
           </div>
 
           <button 
             type="submit" 
-            disabled={state.submitting || isSubmitting}
-            className="form-button"
+            className="form-button flex items-center justify-center gap-2"
+            disabled={isSubmitting}
           >
-            {state.submitting ? 'Enviando...' : 'Enviar Mensagem'} <Send size={18} />
+            {status.type === 'loading' ? status.message : 'Enviar Mensagem'}
           </button>
 
-          {state.errors && state.errors.length > 0 && (
-            <div className="mt-4 p-3 bg-red-100 text-red-700 rounded-lg flex items-center gap-2">
+          {status.type === 'error' && (
+            <div className="mt-4 p-3 bg-red-100 text-red-700 rounded flex items-center gap-2">
               <AlertCircle size={20} />
-              <span>Erro ao enviar. Tente novamente.</span>
+              <span>{status.message}</span>
             </div>
           )}
         </form>
