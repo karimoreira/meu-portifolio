@@ -399,7 +399,7 @@ ul {
 .hero-greeting {
   font-family: 'Fira Code', monospace;
   color: #bd34fe;
-  margin-bottom: 1rem;
+  margin-top: 2rem; 
 }
 
 .hero-title {
