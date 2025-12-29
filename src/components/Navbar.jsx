@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
-export default function Navbar() {
+export default function Navbar({ theme, setTheme }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
@@ -10,6 +10,14 @@ export default function Navbar() {
     { name: 'Projetos', href: '#projects' },
     { name: 'Contato', href: '#contact' },
   ];
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  const getThemeIcon = () => {
+    return theme === 'light' ? <Sun size={24} /> : <Moon size={24} />;
+  };
 
   return (
     <nav className="navbar">
@@ -26,11 +34,19 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+          <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Alternar tema">
+            {getThemeIcon()}
+          </button>
         </div>
 
-        <button className="mobile-btn" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="mobile-actions">
+          <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Alternar tema">
+            {getThemeIcon()}
+          </button>
+          <button className="mobile-btn" onClick={() => setIsOpen(!isOpen)} aria-label="Menu">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {isOpen && (
