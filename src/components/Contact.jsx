@@ -7,6 +7,19 @@ export default function Contact() {
   const [status, setStatus] = useState({ type: '', message: '' });
 
   const RECAPTCHA_SITE_KEY = '6Lfv7EgrAAAAAMJQJ5FGb7eTxnVBP4q4F6BnyvYT'; 
+  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
+
+  const loadRecaptcha = () => {
+    if (recaptchaLoaded || window.grecaptcha) return;
+
+    const script = document.createElement('script');
+    script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.defer = true;
+    script.onload = () => setRecaptchaLoaded(true);
+    document.head.appendChild(script);
+    setRecaptchaLoaded(true);
+  };
 
   const onSubmit = async (data) => {
     setStatus({ type: 'loading', message: 'Verificando segurança...' });
@@ -85,6 +98,7 @@ export default function Contact() {
               className="form-input"
               placeholder="Seu nome"
               disabled={isSubmitting}
+              onFocus={loadRecaptcha}
             />
             {errors.name && <span className="form-error">{errors.name.message}</span>}
           </div>
@@ -103,6 +117,7 @@ export default function Contact() {
               className="form-input"
               placeholder="seu@email.com"
               disabled={isSubmitting}
+              onFocus={loadRecaptcha}
             />
             {errors.email && <span className="form-error">{errors.email.message}</span>}
           </div>
@@ -115,6 +130,7 @@ export default function Contact() {
               className="form-textarea"
               placeholder="Como posso te ajudar?"
               disabled={isSubmitting}
+              onFocus={loadRecaptcha}
             ></textarea>
             {errors.message && <span className="form-error">{errors.message.message}</span>}
           </div>
