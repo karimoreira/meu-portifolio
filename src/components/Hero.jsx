@@ -1,4 +1,4 @@
-import { motion as Motion } from 'framer-motion';
+import { m as Motion, LazyMotion, domAnimation } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 
@@ -15,6 +15,7 @@ export default function Hero() {
   }
 
   return (
+    <LazyMotion features={domAnimation}>
     <section id="about" className="hero-section">
       <div className="hero-glow" />
 
@@ -78,5 +79,6 @@ export default function Hero() {
         </Motion.div>
       </div> 
     </section>
+    </LazyMotion>
   );
 }
