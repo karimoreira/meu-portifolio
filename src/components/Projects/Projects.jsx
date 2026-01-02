@@ -22,6 +22,8 @@ export default function Projects() {
                   decoding="async"
                   width="600"
                   height="400"
+                  srcSet={`${project.image} 800w`}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="project-overlay">
                   <a href={project.repo} target="_blank" rel="noopener noreferrer" className="project-link github" aria-label={`Ver código fonte de ${project.title}`}><Github size={20}/></a>
