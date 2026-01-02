@@ -6,14 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node post-build.js",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@fontsource/fira-code": "^5.2.7",
-    "@fontsource/inter": "^5.2.8",
-    "@formspree/react": "^3.0.0",
-    "framer-motion": "^12.23.26",
     "lucide-react": "^0.562.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

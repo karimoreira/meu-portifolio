@@ -1,4 +1,3 @@
-import { m as Motion, LazyMotion, domAnimation } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 
@@ -15,17 +14,11 @@ export default function Hero() {
   }
 
   return (
-    <LazyMotion features={domAnimation}>
     <section id="about" className="hero-section">
       <div className="hero-glow" />
 
       <div className="container hero-grid">
-        <Motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="hero-content"
-        >
+        <div className="hero-content animate-slide-left">
           <p className="hero-greeting">Olá, mundo! Sou o</p>
           <h1 className="hero-title">{personalData.name}</h1>
           <h2 className="hero-role">{personalData.role}</h2>
@@ -53,14 +46,9 @@ export default function Hero() {
               <Mail />
             </a>
           </div>
-        </Motion.div>
+        </div>
 
-        <Motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="code-card"
-        >
+        <div className="code-card animate-scale-in">
           <div className="code-header">
             <div className="dot red" />
             <div className="dot yellow" />
@@ -76,9 +64,8 @@ export default function Hero() {
             <p className="indent-1">learningAndPracticing: <span className="c-gray">'Focado em colocar em prática demandas técnicas.'</span></p>
             <p><span className="c-purple">{"}"}</span>;</p>
           </div>
-        </Motion.div>
+        </div>
       </div> 
     </section>
-    </LazyMotion>
   );
 }
