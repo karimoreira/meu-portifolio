@@ -10,14 +10,23 @@ function App() {
   const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
+    if (window.location.pathname !== '/') {
+      window.history.replaceState(null, '', '/');
+    }
+  }, []);
+
+  useEffect(() => {
     const body = document.body;
+    const html = document.documentElement;
     const navbar = document.querySelector('.navbar');
 
     body.className = '';
+    html.className = '';
     navbar.className = 'navbar';
 
     if (theme === 'light') {
       body.classList.add('light-theme');
+      html.classList.add('light-theme');
       navbar.classList.add('light-theme');
     }
   }, [theme]);

@@ -1,16 +1,33 @@
-# React + Vite
+# Portfólio pessoal - desenvolvedor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá!
 
-Currently, two official plugins are available:
+Aqui neste projeto, além de inserir os projetos que desenvolvi, tanto no front-end quanto no back-end, também pratico e aprendo cada dia mais com as tecnologias que utilizo em meu portfólio, busco aprender não somente para os projetos/cases inseridos, mas também para que o meu site tenha tecnologias que façam sentido para o atual momento e design, com uma boa usabilidade e que seja atrativo e acessível sempre.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A atual versão foi reestruturada e desenvolvida em React.js durante o último trimestre de 2025, e publicado através da Vercel. Já a versão 1 e 2 de 2023 foram desenvolvidas em HTML, css, Javascript e a biblioteca swiper.js para o antigo carrossel.  
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## tecnologias utilizadas:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML
+- CSS
+- React
+- Javascript
+- Framer motion
+- Lucide react
+- React hook form
+- Formspree
+
+
+## infraestrutura e segurança do site 
+
+Durante a migração para o React com Vite, configurei o arquivo vercel.json para otimizar o deploy e garantir a segurança do meu site, por ter um domínio próprio.
+
+-SPA routing: Configuração de rewrites para garantir que todas as rotas sejam redirecionadas para o index.html, permitindo o funcionamento correto do roteamento no lado do cliente
+- Security headers: Implementação de cabeçalhos de segurança HTTP:
+  - Content-Security-Policy para proteção contra XSS e injeção de scripts
+  - Strict-Transport-Security para forçar o HTTPS
+  - X-Frame-Options e X-Content-Type-Options para proteção contra clickjacking e sniffing de MIME types
+  - Permissions-Policy para restringir acesso a recursos de hardware
+

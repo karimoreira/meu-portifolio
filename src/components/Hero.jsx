@@ -3,6 +3,16 @@ import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 
 export default function Hero() {
+  const scrollToSkills = () => {
+    const section = document.querySelector('#skills')
+    const headerHeight = document.querySelector('.navbar').offsetHeight
+
+    if (section) {
+      const sectionTop = section.offsetTop - headerHeight;
+      window.scrollTo({ top: sectionTop, behavior: 'smooth' })
+    }
+  }
+
   return (
     <section id="about" className="hero-section">
       <div className="hero-glow" />
@@ -59,7 +69,12 @@ export default function Hero() {
             <p><span className="c-cyan">const</span> developer = <span className="c-purple">{"{"}</span></p>
             <p className="indent-1">name: <span className="c-gray">'{personalData.name}'</span>,</p>
             <p className="indent-1">
-              skills: <a href="#skills" className="c-cyan hover-underline">this.showAll()</a>,
+              skills: <a href="#skills" className="c-cyan hover-underline" onClick={(e) => 
+                { 
+                  e.preventDefault(); 
+                  scrollToSkills(); 
+
+                }}>this.showAll()</a>,
             </p>
             <p className="indent-1">learningAndPracticing: <span className="c-gray">'Focado em colocar em prática demandas técnicas.'</span></p>
             <p><span className="c-purple">{"}"}</span>;</p>
