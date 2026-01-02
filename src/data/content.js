@@ -41,7 +41,7 @@ export const projects = [
     id: 1,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
-    description: "Landing page inspirada na SpaceX. O projeto apresenta um layout moderno, responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
+    description: "Landing page inspirada na SpaceX. O projeto apresenta um layout responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     repo: "https://github.com/karimoreira/space-x-inspiracao",
     deploy: "https://github.com/karimoreira/space-x-inspiracao",
@@ -90,7 +90,7 @@ export const projects = [
     id: 6,
     tag: "Java Desktop",
     title: "Gestão de Clientes",
-    description: "Sistema desktop com autenticação, criptografia e banco SQLite. Conta com filtros de busca, backup e geração de relatórios (JasperReports). Interface clássica do Java focada em funcionalidade.",
+    description: "Sistema desktop com autenticação, criptografia e banco SQLite. Conta com filtros de busca, backup e geração de relatórios (JasperReports). A interface é a clássica do Java, focada em funcionalidade.",
     tech: ["Java", "Swing", "SQLite", "JDBC", "MVC"],
     repo: "https://github.com/karimoreira/sistema-java-desktop/",
     image: "img/cadastro.jpeg"
