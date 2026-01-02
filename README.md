@@ -22,7 +22,7 @@ A atual versão foi reestruturada e desenvolvida em React.js durante o último t
 
 ## infraestrutura e segurança do site 
 
-Durante a migração para o React com Vite, configurei o arquivo vercel.json para otimizar o deploy e garantir a segurança do meu site, por ter um domínio próprio.
+Durante a migração para o React com Vite, configurei o arquivo vercel.json para otimizar o deploy, melhorar a performance e garantir a segurança do meu site, por ter um domínio próprio.
 
 -SPA routing: Configuração de rewrites para garantir que todas as rotas sejam redirecionadas para o index.html, permitindo o funcionamento correto do roteamento no lado do cliente
 - Security headers: Implementação de cabeçalhos de segurança HTTP:
@@ -30,4 +30,5 @@ Durante a migração para o React com Vite, configurei o arquivo vercel.json par
   - Strict-Transport-Security para forçar o HTTPS
   - X-Frame-Options e X-Content-Type-Options para proteção contra clickjacking e sniffing de MIME types
   - Permissions-Policy para restringir acesso a recursos de hardware
+- Cache-Control: Configuração de Cache-Control para estáticos.
 

@@ -18,6 +18,7 @@ export default function Projects() {
                   alt={project.title} 
                   className="project-image" 
                   loading="lazy"
+                  decoding="async"
                   width="600"
                   height="400"
                 />
