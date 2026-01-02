@@ -32,3 +32,6 @@ Durante a migração para o React com Vite, configurei o arquivo vercel.json par
   - Permissions-Policy para restringir acesso a recursos de hardware
 - Cache-Control: Configuração de Cache-Control para estáticos.
 
+
+[![PageSpeed Mobile](https://img.shields.io/badge/PageSpeed%20Mobile-100%2F100-success?style=for-the-badge&logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.atiliodev.com%2F&form_factor=mobile)
+[![PageSpeed Desktop](https://img.shields.io/badge/PageSpeed%20Desktop-100%2F100-success?style=for-the-badge&logo=google-chrome&logoColor=white)](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fwww.atiliodev.com%2F&form_factor=desktop)
