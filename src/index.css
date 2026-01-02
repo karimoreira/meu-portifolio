@@ -220,7 +220,6 @@ ul {
   height: 80px; 
   display: flex;
   align-items: center;
-  transition: background-color 0.3s;
 }
 
 .navbar-container {

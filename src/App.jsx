@@ -10,9 +10,15 @@ function App() {
   const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
-    document.body.className = '';
+    const body = document.body;
+    const navbar = document.querySelector('.navbar');
+
+    body.className = '';
+    navbar.className = 'navbar';
+
     if (theme === 'light') {
-      document.body.classList.add('light-theme');
+      body.classList.add('light-theme');
+      navbar.classList.add('light-theme');
     }
   }, [theme]);
 
