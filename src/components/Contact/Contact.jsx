@@ -49,7 +49,7 @@ export default function Contact() {
       const result = await response.json();
 
       if (response.ok) {
-        setStatus({ type: 'success', message: 'Mensagem enviada com sucesso! Em breve entrarei em contato.' });
+        setStatus({ type: 'success', message: 'Em breve entrarei em contato.' });
         reset();
       } else {
         if (result.errors) {
@@ -69,8 +69,8 @@ export default function Contact() {
     return (
       <section id="contact" className="contact-section">
         <div className="contact-container">
-          <div className="p-6 bg-green-100 text-green-700 rounded-lg flex flex-col items-center gap-4 text-center">
-            <CheckCircle size={48} />
+          <div className="p-6 rounded-lg flex flex-col items-center gap-4 text-center" style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e' }}>
+            <CheckCircle size={48} color="#22c55e" />
             <h3 className="text-xl font-bold">Mensagem enviada!</h3>
             <p>{status.message}</p>
           </div>
