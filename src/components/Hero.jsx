@@ -61,7 +61,8 @@ export default function Hero() {
             <p className="indent-1">
               skills: <a href="#skills" className="c-cyan hover-underline" onClick={(e) => scrollToSection(e, '#skills')}>this.showAll()</a>,
             </p>
-            <p className="indent-1">learningAndPracticing: <span className="c-gray">'Focado em colocar em prática demandas técnicas.'</span></p>
+            <p className="indent-1">education: <span className="c-gray">'Análise e Desenvolvimento de Sistemas'</span>,</p>
+            <p className="indent-1">learningAndPracticing: <span className="c-gray">'Aprendizado constante e evolução contínua.'</span></p>
             <p><span className="c-purple">{"}"}</span>;</p>
           </div>
         </div>
