@@ -28,7 +28,7 @@ function App() {
       
       <footer className="app-footer">
         <p>Desenvolvido por <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="footer-name">Kari Atílio Moreira</a></p>
-        <p className="copyright-container"><span className="copyright-symbol">©</span> 2025 atiliodev.com</p>
+        <p className="copyright-container"><span className="copyright-symbol">©</span> 2026 atiliodev.com</p>
       </footer>
     </div>
   )
