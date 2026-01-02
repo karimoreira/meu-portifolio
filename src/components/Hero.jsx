@@ -45,10 +45,10 @@ export default function Hero() {
             <a href={personalData.social.github} target="_blank" rel="noopener noreferrer" className="social-icon hover-gray" aria-label="GitHub">
               <Github />
             </a>
-            <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon hover-purple" aria-label="LinkedIn">
+            <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon hover-cyan" aria-label="LinkedIn">
               <Linkedin />
             </a>
-            <a href={personalData.social.email} className="social-icon hover-cyan" aria-label="Email">
+            <a href={personalData.social.email} className="social-icon hover-purple" aria-label="Email">
               <Mail />
             </a>
           </div>

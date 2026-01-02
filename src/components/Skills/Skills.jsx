@@ -1,4 +1,5 @@
-import { skills } from '../data/content';
+import { skills } from '../../data/content';
+import './Skills.css';
 
 export default function Skills() {
   return (
