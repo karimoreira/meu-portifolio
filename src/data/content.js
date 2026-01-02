@@ -45,7 +45,7 @@ export const projects = [
     tech: ["HTML5", "CSS3", "JavaScript"],
     repo: "https://github.com/karimoreira/space-x-inspiracao",
     deploy: "https://github.com/karimoreira/space-x-inspiracao",
-    image: "https://raw.githubusercontent.com/karimoreira/space-x-inspiracao/refs/heads/master/assets/section1.png"
+    image: "img/space-x.webp"
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const projects = [
     tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
     repo: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
     deploy: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
-    image: "img/frontcoffee.png"
+    image: "img/frontcoffee.webp"
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ export const projects = [
     description: "Solução completa dividida em API, Mobile e Web. Ampliou meus conhecimentos técnicos sobre a importância de soluções na área da saúde. Inclui gestão de agendamentos e pacientes.",
     tech: ["React", "Vite", "Expo", "SQLite", "API REST"],
     repo: "https://github.com/karimoreira/Aplicacao-Medica-Agendei",
-    image: "img/criarconta.png"
+    image: "img/criarconta.webp"
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ export const projects = [
     tech: ["JavaScript", "Fetch API", "HTML5", "CSS3"],
     repo: "https://github.com/karimoreira/desafio-tecnico/",
     deploy: "https://desafio-tecnico-peach.vercel.app/pokedex.html",
-    image: "https://raw.githubusercontent.com/karimoreira/desafio-tecnico/refs/heads/master/images/pokedex-lista.png"
+    image: "img/pokedex.webp"
   },
   {
     id: 5,
@@ -84,7 +84,7 @@ export const projects = [
     tech: ["Python", "JavaScript", "JSON", "HTML/CSS"],
     repo: "https://github.com/karimoreira/biblioteca-livros-online",
     deploy: "https://biblioteca-programacao.vercel.app/",
-    image: "img/bibliotecadelivros.png"
+    image: "img/bibliotecadelivros.webp"
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ export const projects = [
     description: "Sistema desktop com autenticação, criptografia e banco SQLite. Conta com filtros de busca, backup e geração de relatórios (JasperReports). A interface é a clássica do Java, focada em funcionalidade.",
     tech: ["Java", "Swing", "SQLite", "JDBC", "MVC"],
     repo: "https://github.com/karimoreira/sistema-java-desktop/",
-    image: "img/cadastro.jpeg"
+    image: "img/cadastro.webp"
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ export const projects = [
     description: "Simulação visual dos planetas orbitando o Sol, incluindo a Lua e a Terra. As órbitas são traçadas com efeitos de rotação e velocidades proporcionais ao tempo orbital real.",
     tech: ["CSS", "HTML5", "Frontend"],
     repo: "https://github.com/karimoreira/sistema-solar",
-    image: "img/sistemasolar.png"
+    image: "img/sistemasolar.webp"
   },
   {
     id: 8,
@@ -111,7 +111,7 @@ export const projects = [
     description: "Interface intuitiva para serviço de hospedagem de sites. Permite visualizar planos e recursos. Proposta de permitir que qualquer pessoa coloque seu site no ar com poucos cliques.",
     tech: ["HTML5", "CSS3"],
     repo: "https://github.com/karimoreira/Site_Hospedagem_hDC_host",
-    image: "img/hostsite.png"
+    image: "img/hostsite.webp"
   },
   {
     id: 9,
@@ -120,6 +120,6 @@ export const projects = [
     description: "Jogo de memória temático desafiando usuários a encontrar pares de cartas dos personagens da série. Experiência divertida e interativa para testar a memória.",
     tech: ["JavaScript", "HTML", "CSS3"],
     repo: "https://github.com/karimoreira/rick-morty-game",
-    image: "img/jogodamemoria.png"
+    image: "img/jogodamemoria.webp"
   }
 ];

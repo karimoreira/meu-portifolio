@@ -3,8 +3,9 @@ import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 
 export default function Hero() {
-  const scrollToSkills = () => {
-    const section = document.querySelector('#skills')
+  const scrollToSection = (e, id) => {
+    e.preventDefault()
+    const section = document.querySelector(id)
     const headerHeight = document.querySelector('.navbar').offsetHeight
 
     if (section) {
@@ -36,7 +37,7 @@ export default function Hero() {
             <a href={personalData.resumeUrl} download className="btn btn-primary">
               Baixar Currículo
             </a>
-            <a href="#projects" className="btn btn-secondary">
+            <a href="#projects" className="btn btn-secondary" onClick={(e) => scrollToSection(e, '#projects')}>
               Ver Projetos <ArrowRight size={18} />
             </a>
           </div>
@@ -69,12 +70,7 @@ export default function Hero() {
             <p><span className="c-cyan">const</span> developer = <span className="c-purple">{"{"}</span></p>
             <p className="indent-1">name: <span className="c-gray">'{personalData.name}'</span>,</p>
             <p className="indent-1">
-              skills: <a href="#skills" className="c-cyan hover-underline" onClick={(e) => 
-                { 
-                  e.preventDefault(); 
-                  scrollToSkills(); 
-
-                }}>this.showAll()</a>,
+              skills: <a href="#skills" className="c-cyan hover-underline" onClick={(e) => scrollToSection(e, '#skills')}>this.showAll()</a>,
             </p>
             <p className="indent-1">learningAndPracticing: <span className="c-gray">'Focado em colocar em prática demandas técnicas.'</span></p>
             <p><span className="c-purple">{"}"}</span>;</p>
