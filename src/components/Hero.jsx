@@ -61,7 +61,7 @@ export default function Hero() {
             <p className="indent-1">
               skills: <a href="#skills" className="c-cyan hover-underline">this.showAll()</a>,
             </p>
-            <p className="indent-1">hardWorker: <span className="c-purple">true</span></p>
+            <p className="indent-1">learningAndPracticing: <span className="c-gray">'Focado em colocar em prática demandas técnicas.'</span></p>
             <p><span className="c-purple">{"}"}</span>;</p>
           </div>
         </Motion.div>

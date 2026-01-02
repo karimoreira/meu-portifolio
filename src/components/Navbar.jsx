@@ -4,6 +4,17 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 export default function Navbar({ theme, setTheme }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (event, href) => {
+    event.preventDefault();
+    const section = document.querySelector(href);
+    const headerHeight = document.querySelector('.navbar').offsetHeight;
+
+    if (section) {
+      const sectionTop = section.offsetTop - headerHeight;
+      window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+    }
+  };
+
   const links = [
     { name: 'Sobre mim', href: '#about' }, 
     { name: 'Skills', href: '#skills' },
@@ -30,7 +41,7 @@ export default function Navbar({ theme, setTheme }) {
         
         <div className="desktop-menu">
           {links.map((link, index) => (
-            <a key={link.name} href={link.href}>
+            <a key={link.name} href={link.href} onClick={(e) => scrollToSection(e, link.href)}>
               {link.name}
             </a>
           ))}
@@ -52,7 +63,7 @@ export default function Navbar({ theme, setTheme }) {
       {isOpen && (
         <div className="mobile-dropdown">
           {links.map((link) => (
-            <a key={link.name} href={link.href} onClick={() => setIsOpen(false)}>
+            <a key={link.name} href={link.href} onClick={(e) => { scrollToSection(e, link.href); setIsOpen(false); }}>
               {link.name}
             </a>
           ))}
