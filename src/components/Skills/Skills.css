@@ -1,6 +1,7 @@
 .skills-section {
   background-color: var(--color-section-bg-alt);
   color: var(--color-text);
+  padding: 36px 0;
 }
 
 .skills-grid {

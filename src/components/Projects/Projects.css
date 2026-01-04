@@ -1,6 +1,7 @@
 .projects-section {
   background-color: var(--color-section-bg);
   color: var(--color-text);
+  padding: 36px 0;
 }
 
 .project-card {
@@ -63,11 +64,13 @@
 .project-link.github:hover { 
   background-color: var(--color-secondary); 
   color: white; 
+  filter: brightness(0.8);
 }
 
 .project-link.deploy:hover { 
   background-color: var(--color-primary); 
   color: white; 
+  filter: brightness(0.8);
 }
 
 .project-content {

@@ -4,7 +4,7 @@ import './Projects.css';
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-padding projects-section">
+    <section id="projects" className="projects-section">
       <div className="container-custom">
         <h2 className="section-title">
           Alguns Projetos

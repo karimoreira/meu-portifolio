@@ -33,7 +33,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="app-container">
+    <div className="site-container">
       <Navbar theme={theme} setTheme={setTheme} />
       <main>
         <Hero />
@@ -44,7 +44,7 @@ function App() {
         </Suspense>
       </main>
       
-      <footer className="app-footer">
+      <footer className="site-footer">
         <p>Desenvolvido por <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="footer-name">Kari Atílio Moreira</a></p>
         <p className="copyright-container"><span className="copyright-symbol">©</span> 2026 atiliodev.com</p>
       </footer>

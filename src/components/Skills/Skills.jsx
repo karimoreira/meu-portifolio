@@ -3,7 +3,7 @@ import './Skills.css';
 
 export default function Skills() {
   return (
-    <section id="skills" className="section-padding skills-section">
+    <section id="skills" className="skills-section">
       <div className="container-custom">
         <h2 className="section-title">
           Skills

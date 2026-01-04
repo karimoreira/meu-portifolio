@@ -323,10 +323,6 @@ ul {
 }
 
 
-.section-padding {
-  padding: 36px 0;
-}
-
 .container {
   max-width: 1200px;
   width: 100%;
@@ -393,11 +389,10 @@ ul {
 
 
 .hero-section {
-  min-height: 100vh;
+  min-height: 1144px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
   position: relative;
   overflow: hidden;
   background-color: var(--color-background);
@@ -661,17 +656,17 @@ ul {
 }
 
 
-.app-container {
+.site-container {
   background-color: var(--color-background);
   min-height: 100vh;
 }
 
-.app-container ::selection {
+.site-container ::selection {
   background-color: var(--color-primary);
   color: white;
 }
 
-.app-footer {
+.site-footer {
   padding: 32px 0;
   text-align: center;
   font-size: 14px;
@@ -694,9 +689,9 @@ ul {
 }
 
 .footer-name {
-  color: var(--color-text);
+  color: var(--color-primary);
   text-decoration: underline;
-  text-decoration-color: var(--color-secondary);
+  text-decoration-color: var(--color-primary);
 }
 
 .hover-underline {

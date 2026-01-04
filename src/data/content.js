@@ -62,7 +62,6 @@ export const projects = [
     description: "Landing page inspirada na SpaceX. O projeto apresenta um layout responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     repo: "https://github.com/karimoreira/space-x-inspiracao",
-    deploy: "https://github.com/karimoreira/space-x-inspiracao",
     image: "img/space-x.webp"
   },
   {
@@ -72,7 +71,6 @@ export const projects = [
     description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
     tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
     repo: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
-    deploy: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
     image: "img/frontcoffee.webp"
   },
  {
