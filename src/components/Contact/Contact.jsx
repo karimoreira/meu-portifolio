@@ -69,9 +69,8 @@ export default function Contact() {
     return (
       <section id="contact" className="contact-section">
         <div className="contact-container">
-          <div className="p-6 rounded-lg flex flex-col items-center gap-4 text-center" style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e' }}>
-            <CheckCircle size={48} color="#22c55e" />
-            <h3 className="text-xl font-bold">Mensagem enviada!</h3>
+          <div className="contact-success-message">
+            <h3 className="contact-success-title">Mensagem enviada!</h3>
             <p>{status.message}</p>
           </div>
         </div>
