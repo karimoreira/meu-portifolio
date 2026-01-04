@@ -32,7 +32,7 @@
   display: block;
   font-size: 12px;
   font-family: 'Fira Code', monospace;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -68,7 +68,7 @@
 .form-button {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  background: var(--color-primary);
   color: var(--color-background);
   font-weight: bold;
   border-radius: 8px;
@@ -106,7 +106,7 @@
 }
 
 .recaptcha-legal-text a {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-decoration: underline;
   transition: color 0.3s;
 }

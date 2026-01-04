@@ -56,14 +56,14 @@ export default function Hero() {
           </div>
           
           <div className="code-content">
-            <p><span className="c-cyan">const</span> developer = <span className="c-purple">{"{"}</span></p>
-            <p className="indent-1">name: <span className="c-gray">'{personalData.name}'</span>,</p>
+            <p><span className="c-cyan">const</span> developer = <span className="c-yellow">{"{"}</span></p>
+            <p className="indent-1"><span className="c-cyan">name</span>: <span className="c-string">'{personalData.name}'</span>,</p>
             <p className="indent-1">
-              skills: <a href="#skills" className="c-cyan hover-underline" onClick={(e) => scrollToSection(e, '#skills')}>this.showAll()</a>,
+              <span className="c-cyan">skills</span>: <a href="#skills" className="hover-underline" onClick={(e) => scrollToSection(e, '#skills')}><span className="c-cyan">this</span>.<span className="c-method">showAll</span><span className="c-yellow">()</span></a>,
             </p>
-            <p className="indent-1">education: <span className="c-gray">'Análise e Desenvolvimento de Sistemas'</span>,</p>
-            <p className="indent-1">learningAndPracticing: <span className="c-gray">'Aprendizado constante e evolução contínua.'</span></p>
-            <p><span className="c-purple">{"}"}</span>;</p>
+            <p className="indent-1"><span className="c-cyan">education</span>: <span className="c-string">'Análise e Desenvolvimento de Sistemas'</span>,</p>
+            <p className="indent-1"><span className="c-cyan">learningAndPracticing</span>: <span className="c-string">'Aprendizado constante e evolução contínua.'</span></p>
+            <p><span className="c-yellow">{"}"}</span>;</p>
           </div>
         </div>
       </div> 

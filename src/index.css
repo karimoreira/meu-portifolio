@@ -538,6 +538,9 @@ ul {
 .c-cyan { color: var(--color-primary); }
 .c-purple { color: var(--color-secondary); }
 .c-gray { color: var(--color-muted); }
+.c-yellow { color: #ffd700; }
+.c-string { color: #ce9178; }
+.c-method { color: #dcdcaa; }
 
 
 .indent-1 { padding-left: 16px; }
