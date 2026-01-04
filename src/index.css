@@ -470,7 +470,7 @@ ul {
 }
 
 .btn-primary {
-  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  background: linear-gradient(to right, var(--color-primary), var(--color-text));
   color: var(--color-background);
   border: none;
 }

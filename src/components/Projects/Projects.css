@@ -58,11 +58,11 @@
   justify-content: center;
 }
 
-.project-link.github { color: var(--color-secondary); }
+.project-link.github { color: var(--color-code-string); }
 .project-link.deploy { color: var(--color-primary); }
 
 .project-link.github:hover { 
-  background-color: var(--color-secondary); 
+  background-color: var(--color-code-string); 
   color: white; 
   filter: brightness(0.8);
 }
@@ -83,7 +83,7 @@
 .project-tag {
   font-size: 14px;
   font-family: 'Fira Code', monospace;
-  color: var(--color-secondary);
+  color: var(--color-code-string);
   margin-bottom: 8px;
 }
 

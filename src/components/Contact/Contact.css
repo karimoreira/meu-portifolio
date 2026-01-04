@@ -14,6 +14,7 @@
 .contact-text {
   font-size: 16px;
   margin-bottom: 48px;
+  color: var(--color-muted);
 }
 
 .contact-form {
@@ -30,7 +31,7 @@
 
 .form-label {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Fira Code', monospace;
   color: var(--color-primary);
   margin-bottom: 8px;
@@ -68,7 +69,7 @@
 .form-button {
   width: 100%;
   padding: 16px;
-  background: var(--color-primary);
+  background: linear-gradient(to right, var(--color-primary), var(--color-text));
   color: var(--color-background);
   font-weight: bold;
   border-radius: 8px;
@@ -112,7 +113,6 @@
 }
 
 .recaptcha-legal-text a:hover {
-  color: var(--color-primary);
   text-decoration: underline;
 }
 

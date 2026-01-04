@@ -81,7 +81,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
-        <h2 className="section-title" style={{justifyContent: 'center'}}>Contato</h2>
+        <h2 className="section-title" style={{justifyContent: 'center', color: 'var(--color-primary)'}}>Contato</h2>
         <p className="contact-text">
           Tem interesse em desenvolver um projeto ou solucionar demandas específicas? Preencha o formulário e retornarei com as informações necessárias.
         </p>
