@@ -346,7 +346,18 @@ ul {
   min-height: auto; 
 }
 
-
+.hero-section {
+  min-height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding-top: 180px;
+  padding-bottom: 120px;
+}
 
 @media screen and (max-width: 1024px) {
   .hero-grid {
@@ -357,7 +368,10 @@ ul {
     font-size: 40px !important; 
   }
 
-
+  .hero-section {
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -389,21 +403,11 @@ ul {
     margin-top: 16px;
   }
 
+  .hero-section {
+    padding-top: 140px;
+  }
 }
 
-
-.hero-section {
-  min-height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  padding-top: 260px;
-  padding-bottom: 80px;
-}
 
 .hero-glow {
   position: absolute;
