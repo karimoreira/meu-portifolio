@@ -343,7 +343,7 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
-  min-height: calc(100vh - 80px); 
+  min-height: auto; 
 }
 
 
@@ -389,22 +389,20 @@ ul {
     margin-top: 16px;
   }
 
-    .hero-section {
-    padding-top: 96px !important;
-  }
-
 }
 
 
 .hero-section {
-  min-height: 1144px;
+  min-height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   overflow: hidden;
   background-color: var(--color-background);
   color: var(--color-text);
+  padding-top: 260px;
+  padding-bottom: 80px;
 }
 
 .hero-glow {
