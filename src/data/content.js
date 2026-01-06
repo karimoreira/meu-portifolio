@@ -50,7 +50,7 @@ export const projects = [
     id: 2,
     tag: "Rede Social",
     title: "Ping",
-    description: "Rede social focada em conexões reais. Permite aos usuários postar atualizações apenas para seus amigos, seguir e interagir por meio de curtidas, compartilhamentos e comentários sem ser sufocado por anúncios ou assuntos irrelevantes.",
+    description: "Rede social focada em conexões reais. Permite aos usuários postar atualizações apenas para seus amigos, com a opção deseguir e interagir por meio de curtidas, compartilhamentos e comentários sem ser sufocado por anúncios ou assuntos irrelevantes. Como as redes sociais eram há alguns anos.",
     tech: ["HTML", "CSS", "Javascript", "Node.js", "SQLite"],
     repo: "https://github.com/karimoreira/rede-social-ping",
     image: "img/ping-rede-social.webp"
