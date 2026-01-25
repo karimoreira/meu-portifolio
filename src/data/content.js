@@ -57,21 +57,21 @@ export const projects = [
   },
   {
     id: 3,
-    tag: "Agência de Viagens",
-    title: "Trip Brasil",
-    description: "Website de agência de viagens especializado em destinos brasileiros. Apresenta roteiros turísticos, pacotes de viagem e galeria de destinos com uma interface imersiva e responsiva.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    repo: "https://github.com/karimoreira/agencia-de-viagens-br",
-    image: "img/tripbrasil.webp"
-  },
-  {
-    id: 4,
     tag: "Saúde",
     title: "Agendamento Médico",
     description: "Solução completa dividida em API, Mobile e Web. Ampliou meus conhecimentos técnicos sobre a importância de soluções na área da saúde. Inclui gestão de agendamentos e pacientes.",
     tech: ["React", "Vite", "Expo", "SQLite", "API REST"],
     repo: "https://github.com/karimoreira/Aplicacao-Medica-Agendei",
     image: "img/criarconta.webp"
+  },
+  {
+    id: 4,
+    tag: "Agência de Viagens",
+    title: "Trip Brasil",
+    description: "Website de agência de viagens especializado em destinos brasileiros.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/karimoreira/agencia-de-viagens-br",
+    image: "img/tripbrasil.webp"
   },
   {
     id: 5,
