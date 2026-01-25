@@ -66,6 +66,16 @@ export const projects = [
   },
   {
     id: 4,
+    tag: "Biblioteca",
+    title: "Biblioteca Online",
+    description: "Aplicação web para acessar e pesquisar livros de programação. Carrega automaticamente livros do diretório e gera metadados. Foco em democratizar o acesso ao conhecimento técnico.",
+    tech: ["Python", "JavaScript", "JSON", "HTML/CSS"],
+    repo: "https://github.com/karimoreira/biblioteca-livros-online",
+    deploy: "https://biblioteca-programacao.vercel.app/",
+    image: "img/bibliotecadelivros.webp"
+  },
+  {
+    id: 5,
     tag: "Hospedagem",
     title: "Host Site",
     description: "Serviço de hospedagem de sites. Permite visualizar planos e recursos. Proposta de permitir que qualquer pessoa coloque seu site no ar com poucos cliques.",
@@ -74,7 +84,7 @@ export const projects = [
     image: "img/hostsite.webp"
   },
   {
-    id: 5,
+    id: 6,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
     description: "Landing page inspirada na SpaceX. O projeto apresenta um layout responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
@@ -83,23 +93,13 @@ export const projects = [
     image: "img/space-x.webp"
   },
   {
-    id: 6,
+    id: 7,
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
     description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
     tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
     repo: "https://github.com/karimoreira/Cafeteria_Ctrl_Coffee",
     image: "img/frontcoffee.webp"
-  },
- {
-    id: 7,
-    tag: "Biblioteca",
-    title: "Biblioteca Online",
-    description: "Aplicação web para acessar e pesquisar livros de programação. Carrega automaticamente livros do diretório e gera metadados. Foco em democratizar o acesso ao conhecimento técnico.",
-    tech: ["Python", "JavaScript", "JSON", "HTML/CSS"],
-    repo: "https://github.com/karimoreira/biblioteca-livros-online",
-    deploy: "https://biblioteca-programacao.vercel.app/",
-    image: "img/bibliotecadelivros.webp"
   },
   {
     id: 8,
