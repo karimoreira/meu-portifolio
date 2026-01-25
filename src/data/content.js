@@ -117,7 +117,6 @@ export const projects = [
     description: "Aplicação responsiva que consome a PokéAPI via requisições assíncronas para renderizar cards dinâmicos. Implementa paginação, filtragem por tipos e busca eficiente.",
     tech: ["JavaScript", "Fetch API", "HTML5", "CSS3"],
     repo: "https://github.com/karimoreira/desafio-tecnico/",
-    deploy: "https://desafio-tecnico-peach.vercel.app/pokedex.html",
     image: "img/pokedex.webp"
   },
   {
