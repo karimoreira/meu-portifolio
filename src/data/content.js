@@ -4,7 +4,7 @@ export const personalData = {
   name: "Kari Atílio",
   role: "Full Stack Developer",
   intro: "Desenvolvedor transformando ideias em soluções digitais.",
-  about: "Atuo no desenvolvimento full stack, focando em criar aplicações funcionais, bem estruturadas e alinhadas ao objetivo de cada projeto.",
+  about: "Atuo no desenvolvimento full stack JS, focando em criar aplicações funcionais, bem estruturadas e alinhadas ao objetivo de cada projeto.",
   resumeUrl: "/Curriculo_Kari_Atilio.pdf", 
   social: {
     github: "https://github.com/karimoreira",
