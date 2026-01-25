@@ -57,6 +57,15 @@ export const projects = [
   },
   {
     id: 3,
+    tag: "Agência de Viagens",
+    title: "Trip Brasil",
+    description: "Website de agência de viagens especializado em destinos brasileiros. Apresenta roteiros turísticos, pacotes de viagem e galeria de destinos com uma interface imersiva e responsiva.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/karimoreira/agencia-de-viagens-br",
+    image: "img/tripbrasil.webp"
+  },
+  {
+    id: 4,
     tag: "Saúde",
     title: "Agendamento Médico",
     description: "Solução completa dividida em API, Mobile e Web. Ampliou meus conhecimentos técnicos sobre a importância de soluções na área da saúde. Inclui gestão de agendamentos e pacientes.",
@@ -65,7 +74,7 @@ export const projects = [
     image: "img/criarconta.webp"
   },
   {
-    id: 4,
+    id: 5,
     tag: "Biblioteca",
     title: "Biblioteca Online",
     description: "Aplicação web para acessar e pesquisar livros de programação. Carrega automaticamente livros do diretório e gera metadados. Foco em democratizar o acesso ao conhecimento técnico.",
@@ -75,7 +84,7 @@ export const projects = [
     image: "img/bibliotecadelivros.webp"
   },
   {
-    id: 5,
+    id: 6,
     tag: "Hospedagem",
     title: "Host Site",
     description: "Serviço de hospedagem de sites. Permite visualizar planos e recursos. Proposta de permitir que qualquer pessoa coloque seu site no ar com poucos cliques.",
@@ -84,7 +93,7 @@ export const projects = [
     image: "img/hostsite.webp"
   },
   {
-    id: 6,
+    id: 7,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
     description: "Landing page inspirada na SpaceX. O projeto apresenta um layout responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
@@ -93,7 +102,7 @@ export const projects = [
     image: "img/space-x.webp"
   },
   {
-    id: 7,
+    id: 8,
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
     description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
@@ -102,7 +111,7 @@ export const projects = [
     image: "img/frontcoffee.webp"
   },
   {
-    id: 8,
+    id: 9,
     tag: "Java Desktop",
     title: "Gestão de Clientes",
     description: "Sistema desktop com autenticação, criptografia e banco SQLite. Conta com filtros de busca, backup e geração de relatórios (JasperReports). A interface é a clássica do Java, focada em funcionalidade.",
@@ -111,7 +120,7 @@ export const projects = [
     image: "img/cadastro.webp"
   },
   {
-    id: 9,
+    id: 10,
     tag: "Pokédex",
     title: "Consulta de Pokémons",
     description: "Aplicação responsiva que consome a PokéAPI via requisições assíncronas para renderizar cards dinâmicos. Implementa paginação, filtragem por tipos e busca eficiente.",
@@ -120,7 +129,7 @@ export const projects = [
     image: "img/pokedex.webp"
   },
   {
-    id: 10,
+    id: 11,
     tag: "Animação",
     title: "Sistema Solar",
     description: "Simulação visual dos planetas orbitando o Sol, incluindo a Lua e a Terra. As órbitas são traçadas com efeitos de rotação e velocidades proporcionais ao tempo orbital real.",
@@ -129,7 +138,7 @@ export const projects = [
     image: "img/sistemasolar.webp"
   },
   {
-    id: 11,
+    id: 12,
     tag: "Game",
     title: "Memory Game Rick & Morty",
     description: "Jogo de memória temático desafiando usuários a encontrar pares de cartas dos personagens da série. Experiência divertida e interativa para testar a memória.",
