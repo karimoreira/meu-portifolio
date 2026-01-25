@@ -83,7 +83,7 @@ export default function Contact() {
       <div className="contact-container">
         <h2 className="section-title" style={{justifyContent: 'center', color: 'var(--color-primary)'}}>Contato</h2>
         <p className="contact-text">
-          Tem interesse em desenvolver um projeto ou solucionar demandas específicas? Preencha o formulário e retornarei com as informações necessárias.
+          Se desejar entrar em contato profissionalmente, preencha o formulário abaixo e retornarei o mais breve possível.
         </p>
 
         <form 
