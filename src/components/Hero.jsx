@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 
 export default function Hero() {
@@ -28,11 +28,8 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href={personalData.resumeUrl} download className="btn btn-primary">
-              Baixar Currículo
-            </a>
-            <a href="#projects" className="btn btn-secondary" onClick={(e) => scrollToSection(e, '#projects')}>
-              Ver Projetos <ArrowRight size={18} />
+            <a href="#projects" className="btn btn-primary" onClick={(e) => scrollToSection(e, '#projects')}>
+              Ver Projetos <ArrowDown size={18} />
             </a>
           </div>
           <div className="social-links">
