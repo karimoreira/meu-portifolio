@@ -2,10 +2,10 @@ import { Code, Database, Cloud, Terminal } from 'lucide-react';
 
 export const personalData = {
   name: "Kari Atílio",
-  role: "Full Stack Developer",
+  role: "Desenvolvedor full stack",
   intro: "Desenvolvedor transformando ideias em soluções digitais.",
-  about: "Atuo no desenvolvimento full stack JS, focando em criar aplicações funcionais, bem estruturadas e alinhadas ao objetivo de cada projeto.",
-  resumeUrl: "/Curriculo_Kari_Atilio.pdf", 
+  about: "Atuo hoje em uma empresa brasileira de tecnologia, criando aplicações estruturadas e alinhadas aos objetivos de cada projeto proposto. Além do desenvolvimento web, também atuei com suporte de TI, vendas em TI e sou técnico em Informática, o que amplia minha visão de infraestrutura, operação e atendimento. Tenho formação em perícia forense computacional, trazendo uma perspectiva ampla em análises.",
+  resumeUrl: "/Curriculo_Kari_Atilio.pdf",
   social: {
     github: "https://github.com/karimoreira",
     linkedin: "https://www.linkedin.com/in/atiliomoreira/",
@@ -75,17 +75,16 @@ export const projects = [
   },
   {
     id: 5,
-    tag: "Biblioteca",
+    tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
     description: "Aplicação web para acessar e pesquisar livros de programação. Carrega automaticamente livros do diretório e gera metadados. Foco em democratizar o acesso ao conhecimento técnico.",
     tech: ["Python", "JavaScript", "JSON", "HTML/CSS"],
     repo: "https://github.com/karimoreira/biblioteca-livros-online",
-    deploy: "https://biblioteca-programacao.vercel.app/",
     image: "img/bibliotecadelivros.webp"
   },
   {
     id: 6,
-    tag: "Hospedagem",
+    tag: "Hospedagem de Sites",
     title: "Host Site",
     description: "Serviço de hospedagem de sites. Permite visualizar planos e recursos. Proposta de permitir que qualquer pessoa coloque seu site no ar com poucos cliques.",
     tech: ["HTML5", "CSS3"],

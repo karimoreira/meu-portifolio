@@ -454,6 +454,7 @@ ul {
 
 .hero-actions {
   display: flex;
+  align-items: center;
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -486,7 +487,9 @@ ul {
 
 .social-links {
   display: flex;
+  align-items: center;
   gap: 24px;
+  margin-top: 6px;
 }
 
 .social-icon {
@@ -580,21 +583,6 @@ ul {
     align-items: center;
   }
 
-  
-  .hero-title {
-    margin-bottom: 8px;
-  }
-  
-  .hero-role {
-    margin-bottom: 16px;
-  }
-
-  .hero-description {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-
   .hero-actions {
     display: flex;
     flex-direction: column; 
@@ -612,12 +600,10 @@ ul {
     justify-content: center;
   }
 
-
   .social-links {
     justify-content: center;
     width: 100%;
   }
-
 
   .code-card {
     padding: 16px;

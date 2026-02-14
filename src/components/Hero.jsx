@@ -28,20 +28,41 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="#projects" className="btn btn-primary" onClick={(e) => scrollToSection(e, '#projects')}>
+            <a
+              href="#projects"
+              className="btn btn-primary"
+              onClick={(e) => scrollToSection(e, '#projects')}
+            >
               Ver Projetos <ArrowDown size={18} />
             </a>
-          </div>
-          <div className="social-links">
-            <a href={personalData.social.github} target="_blank" rel="noopener noreferrer" className="social-icon hover-cyan" aria-label="GitHub">
-              <Github />
-            </a>
-            <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon hover-cyan" aria-label="LinkedIn">
-              <Linkedin />
-            </a>
-            <a href={personalData.social.email} className="social-icon hover-cyan" aria-label="Email">
-              <Mail />
-            </a>
+
+            <div className="social-links">
+              <a
+                href={personalData.social.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon hover-cyan"
+                aria-label="GitHub"
+              >
+                <Github />
+              </a>
+              <a
+                href={personalData.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon hover-cyan"
+                aria-label="LinkedIn"
+              >
+                <Linkedin />
+              </a>
+              <a
+                href={personalData.social.email}
+                className="social-icon hover-cyan"
+                aria-label="Email"
+              >
+                <Mail />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -51,7 +72,7 @@ export default function Hero() {
             <div className="dot yellow" />
             <div className="dot green" />
           </div>
-          
+
           <div className="code-content">
             <p><span className="c-cyan">const</span> developer = <span className="c-yellow">{"{"}</span></p>
             <p className="indent-1"><span className="c-cyan">name</span>: <span className="c-string">'{personalData.name}'</span>,</p>
@@ -63,7 +84,7 @@ export default function Hero() {
             <p><span className="c-yellow">{"}"}</span>;</p>
           </div>
         </div>
-      </div> 
+      </div>
     </section>
   );
 }
