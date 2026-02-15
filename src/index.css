@@ -455,7 +455,7 @@ ul {
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin-bottom: 32px;
 }
 
