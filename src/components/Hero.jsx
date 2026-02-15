@@ -36,7 +36,16 @@ export default function Hero() {
               Ver Projetos <ArrowDown size={18} />
             </a>
 
-            <div className="social-links">
+            <div className="social-links social-links--spaced">
+              <a
+                href="https://medium.com/@kari.atilio.m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon hover-cyan"
+                aria-label="Medium"
+              >
+                <span className="social-icon__medium">M</span>
+              </a>
               <a
                 href={personalData.social.github}
                 target="_blank"

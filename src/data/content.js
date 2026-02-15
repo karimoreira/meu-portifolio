@@ -3,7 +3,6 @@ import { Code, Database, Cloud, Terminal } from 'lucide-react';
 export const personalData = {
   name: "Kari Atílio",
   role: "Desenvolvedor full stack",
-  intro: "Desenvolvedor transformando ideias em soluções digitais.",
   about: "Atuo hoje em uma empresa brasileira de tecnologia, criando aplicações estruturadas e alinhadas aos objetivos de cada projeto proposto. Além do desenvolvimento web, também atuei com suporte de TI, vendas em TI e sou técnico em Informática, o que amplia minha visão de infraestrutura, operação e atendimento. Tenho formação em perícia forense computacional, trazendo uma perspectiva ampla em análises.",
   resumeUrl: "/Curriculo_Kari_Atilio.pdf",
   social: {
@@ -17,7 +16,7 @@ export const skills = [
   {
     category: "Linguagens",
     icon: Code,
-    items: ["HTML", "CSS", "JavaScript", "React", "Vite", "TypeScript", "Next.js", "Node.js", "Spring Boot", "NestJS"]
+    items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Node.js", "Spring Boot", "NestJS"]
   },
   {
     category: "Banco de Dados",

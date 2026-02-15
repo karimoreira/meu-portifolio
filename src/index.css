@@ -440,7 +440,7 @@ ul {
 .hero-role {
   font-size: 24px;
   color: var(--color-muted);
-  margin-bottom: 24px;
+  margin-bottom: 2px;
 }
 
 .hero-description {
@@ -455,7 +455,7 @@ ul {
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1.5rem;
   margin-bottom: 32px;
 }
 
@@ -492,6 +492,12 @@ ul {
   margin-top: 6px;
 }
 
+.social-links--spaced {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .social-icon {
   text-decoration: none;
   transition: color 0.3s, transform 0.3s;
@@ -499,6 +505,19 @@ ul {
 
 .social-icon:hover {
   transform: translateY(-3px);
+}
+
+.social-icon__medium {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .hover-gray { color: var(--color-muted); }
