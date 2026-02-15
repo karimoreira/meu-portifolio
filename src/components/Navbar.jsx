@@ -16,7 +16,7 @@ export default function Navbar({ theme, setTheme }) {
   };
 
   const links = [
-    { name: 'Sobre mim', href: '#about' }, 
+    { name: 'Sobre', href: '#about' },
     { name: 'Projetos', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contato', href: '#contact' },
