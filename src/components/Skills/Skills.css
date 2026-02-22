@@ -1,63 +1,161 @@
-.skills-section {
-  background-color: var(--color-section-bg-alt);
-  color: var(--color-text);
-  padding: 36px 0;
+.skills {
+  padding: clamp(60px, 12vh, 120px) 0;
+  background: var(--bg-surface);
+  overflow: hidden;
 }
 
-.skills-grid {
+.skills__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 48px);
+}
+
+.skills__marquee-area {
+  margin-bottom: 64px;
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out-expo);
+}
+
+.skills__marquee-area.active {
+  opacity: 1;
+}
+
+.marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  padding: 8px 0;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+}
+
+.marquee--left .marquee__track {
+  animation: marquee-left 30s linear infinite;
+}
+
+.marquee--right .marquee__track {
+  animation: marquee-right 35s linear infinite;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.marquee__content {
+  display: flex;
+  gap: 16px;
+  padding-right: 16px;
+}
+
+.marquee__item {
+  font-family: var(--font-mono);
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: all 0.3s;
+  background: var(--bg);
+}
+
+.marquee__item:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--glow);
+}
+
+.skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
 }
 
 .skill-card {
-  background-color: var(--color-card-bg);
-  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 16px;
-  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.05));
-  transition: border-color 0.3s;
+  padding: 28px;
+  transition: all 0.3s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
 }
 
 .skill-card:hover {
-  border-color: var(--color-border-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
-.skill-header {
+.skill-card__header {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-.skill-icon {
-  color: var(--color-primary);
-  width: 24px;
-  height: 24px;
+.skill-card__icon {
+  color: var(--primary);
+  width: 22px;
+  height: 22px;
 }
 
-.skill-title {
-  font-weight: bold;
-  font-size: 20px;
+.skill-card__title {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.skill-list {
+.skill-card__items {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.skill-item {
-  padding: 4px 8px;
-  background-color: var(--color-surface-highlight);
-  border-radius: 4px;
-  font-size: 14px;
-  color: var(--color-text);
+.skill-card__item {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
   transition: all 0.3s;
-  cursor: default;
-  border: 1px solid var(--color-border);
 }
 
-.skill-item:hover {
-  background-color: var(--color-border-strong, rgba(255, 255, 255, 0.25));
-  color: var(--color-text-hover);
+.skill-card__item:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--glow);
 }

@@ -1,98 +1,142 @@
+import { useState, useEffect } from 'react';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
+import { useTextScramble } from '../hooks/useTextScramble';
 
 export default function Hero() {
-  const scrollToSection = (e, id) => {
-    e.preventDefault()
-    const section = document.querySelector(id)
-    const headerHeight = document.querySelector('.navbar').offsetHeight
+  const [loaded, setLoaded] = useState(false);
+  const scrambledName = useTextScramble(personalData.name, { delay: 500, trigger: loaded });
+  const scrambledRole = useTextScramble(personalData.role, { delay: 1200, speed: 30, trigger: loaded });
 
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
+  const scrollToSection = (e, id) => {
+    e.preventDefault();
+    const section = document.querySelector(id);
     if (section) {
-      const sectionTop = section.offsetTop - headerHeight;
-      window.scrollTo({ top: sectionTop, behavior: 'smooth' })
+      const offset = 80;
+      window.scrollTo({ top: section.offsetTop - offset, behavior: 'smooth' });
     }
-  }
+  };
 
   return (
-    <section id="about" className="hero-section">
-      <div className="hero-glow" />
+    <section id="about" className="hero">
+      <div className="hero__blobs">
+        <div className="hero__blob hero__blob--1" />
+        <div className="hero__blob hero__blob--2" />
+        <div className="hero__blob hero__blob--3" />
+      </div>
 
-      <div className="container hero-grid">
-        <div className="hero-content animate-slide-left">
-          <p className="hero-greeting">Olá, mundo! Sou o</p>
-          <h1 className="hero-title">{personalData.name}</h1>
-          <h2 className="hero-role">{personalData.role}</h2>
-          <p className="hero-description">
-            {personalData.intro} <br/>
+      <div className="hero__content">
+        <div className="hero__text">
+          <p className={`hero__greeting ${loaded ? 'animate-in' : ''}`}>
+            <span className="hero__greeting-bracket">&lt;</span>
+            Olá, mundo!
+            <span className="hero__greeting-bracket"> /&gt;</span>
+          </p>
+
+          <h1 className={`hero__name ${loaded ? 'animate-in' : ''}`}>
+            {scrambledName || '\u00A0'}
+          </h1>
+
+          <h2 className={`hero__role ${loaded ? 'animate-in' : ''}`}>
+            {scrambledRole || '\u00A0'}
+          </h2>
+
+          <p className={`hero__about ${loaded ? 'animate-in' : ''}`}>
             {personalData.about}
           </p>
 
-          <div className="hero-actions">
+          <div className={`hero__actions ${loaded ? 'animate-in' : ''}`}>
             <a
               href="#projects"
-              className="btn btn-primary"
+              className="btn-primary"
               onClick={(e) => scrollToSection(e, '#projects')}
             >
               Ver Projetos <ArrowDown size={18} />
             </a>
 
-            <div className="social-links social-links--spaced">
+            <div className="hero__social">
               <a
                 href="https://medium.com/@kari.atilio.m"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon hover-cyan"
+                className="social-btn"
                 aria-label="Medium"
               >
-                <span className="social-icon__medium">M</span>
+                <span className="social-btn__medium">M</span>
               </a>
               <a
                 href={personalData.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon hover-cyan"
+                className="social-btn"
                 aria-label="GitHub"
               >
-                <Github />
+                <Github size={20} />
               </a>
               <a
                 href={personalData.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon hover-cyan"
+                className="social-btn"
                 aria-label="LinkedIn"
               >
-                <Linkedin />
+                <Linkedin size={20} />
               </a>
               <a
                 href={personalData.social.email}
-                className="social-icon hover-cyan"
+                className="social-btn"
                 aria-label="Email"
               >
-                <Mail />
+                <Mail size={20} />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="code-card animate-scale-in">
-          <div className="code-header">
-            <div className="dot red" />
-            <div className="dot yellow" />
-            <div className="dot green" />
-          </div>
+        <div className={`hero__visual ${loaded ? 'animate-in' : ''}`}>
+          <div className="code-window">
+            <div className="code-window__header">
+              <div className="code-window__dot code-window__dot--red" />
+              <div className="code-window__dot code-window__dot--yellow" />
+              <div className="code-window__dot code-window__dot--green" />
+              <span className="code-window__title">developer.js</span>
+            </div>
 
-          <div className="code-content">
-            <p><span className="c-cyan">const</span> developer = <span className="c-yellow">{"{"}</span></p>
-            <p className="indent-1"><span className="c-cyan">name</span>: <span className="c-string">'{personalData.name}'</span>,</p>
-            <p className="indent-1">
-              <span className="c-cyan">skills</span>: <a href="#skills" className="hover-underline" onClick={(e) => scrollToSection(e, '#skills')}><span className="c-cyan">this</span>.<span className="c-method">showAll</span><span className="c-yellow">()</span></a>,
-            </p>
-            <p className="indent-1"><span className="c-cyan">education</span>: <span className="c-string">'Análise e Desenvolvimento de Sistemas'</span>,</p>
-            <p className="indent-1"><span className="c-cyan">learningAndPracticing</span>: <span className="c-string">'Aprendizado constante e evolução contínua.'</span></p>
-            <p><span className="c-yellow">{"}"}</span>;</p>
+            <div className="code-window__body">
+              <div className="code-line">
+                <span className="code-ln">1</span>
+                <span className="c-keyword">const</span> developer = <span className="c-bracket">{'{'}</span>
+              </div>
+              <div className="code-line">
+                <span className="code-ln">2</span>
+                <span className="indent" /><span className="c-prop">name</span>: <span className="c-str">'{personalData.name}'</span>,
+              </div>
+              <div className="code-line">
+                <span className="code-ln">3</span>
+                <span className="indent" /><span className="c-prop">skills</span>:{' '}
+                <a href="#skills" className="code-link" onClick={(e) => scrollToSection(e, '#skills')}>
+                  <span className="c-keyword">this</span>.<span className="c-fn">showAll</span><span className="c-bracket">()</span>
+                </a>,
+              </div>
+              <div className="code-line">
+                <span className="code-ln">4</span>
+                <span className="indent" /><span className="c-prop">education</span>: <span className="c-str">'Análise e Des. de Sistemas'</span>
+              </div>
+              <div className="code-line">
+                <span className="code-ln">5</span>
+                <span className="c-bracket">{'}'}</span>;
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className={`hero__scroll-indicator ${loaded ? 'animate-in' : ''}`}>
+        <div className="scroll-line" />
       </div>
     </section>
   );

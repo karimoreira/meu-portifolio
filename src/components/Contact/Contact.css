@@ -1,132 +1,216 @@
-.contact-section {
-  padding: 60px 0 80px 0;
-  background-color: var(--color-background);
-  color: var(--color-text);
+.contact {
+  padding: clamp(60px, 12vh, 120px) 0;
+  background: var(--bg);
+  position: relative;
 }
 
-.contact-container {
-  max-width: 600px;
+.contact__container {
+  max-width: 640px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 clamp(16px, 4vw, 48px);
+}
+
+.contact__header {
   text-align: center;
-}
-
-.contact-text {
-  font-size: 16px;
   margin-bottom: 48px;
-  color: var(--color-muted);
 }
 
-.contact-form {
-  text-align: left;
+.contact__title {
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.contact__title-dot {
+  color: var(--primary);
+}
+
+.contact__subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact__form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  background-color: var(--color-surface);
-  padding: 32px;
-  border-radius: 16px;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 28px;
+  background: var(--bg-card);
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
-.form-label {
-  display: block;
-  font-size: 14px;
-  font-family: 'Fira Code', monospace;
-  color: var(--color-primary);
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
+.form-group {
+  position: relative;
 }
 
-.form-input, .form-textarea {
+.form-field {
   width: 100%;
-  background-color: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 12px;
-  color: var(--color-text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 16px 8px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--text);
   outline: none;
-  transition: border-color 0.3s;
-  box-sizing: border-box; 
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.form-input:focus, .form-textarea:focus {
-  border-color: var(--color-primary);
-}
-
-.form-textarea {
+.form-field--textarea {
   resize: none;
+  min-height: 120px;
+}
+
+.form-field:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--glow);
+}
+
+.form-label-float {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: all 0.2s var(--ease-out-expo);
+}
+
+.form-field--textarea ~ .form-label-float {
+  top: 20px;
+  transform: translateY(0);
+}
+
+.form-field:focus ~ .form-label-float,
+.form-field:not(:placeholder-shown) ~ .form-label-float {
+  top: 8px;
+  transform: translateY(0);
+  font-size: 11px;
+  color: var(--primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.3s var(--ease-out-expo);
+  transform: translateX(-50%);
+  border-radius: 0 0 12px 12px;
+}
+
+.form-field:focus ~ .form-line {
+  width: 100%;
 }
 
 .form-error {
-  color: #ff5f56;
   font-size: 12px;
-  margin-top: 8px;
+  color: #ef4444;
+  margin-top: 6px;
   display: block;
+  font-family: var(--font-mono);
 }
 
-.form-button {
+.form-submit {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(to right, var(--color-primary), var(--color-text));
-  color: var(--color-background);
-  font-weight: bold;
-  border-radius: 8px;
+  background: var(--primary);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
   border: none;
-  cursor: pointer;
-  transition: opacity 0.3s;
+  border-radius: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  transition: all 0.3s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
 }
 
-.form-button:disabled {
-  opacity: 0.7;
+.form-submit::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.15));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.form-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--glow);
+}
+
+.form-submit:hover::before { opacity: 1; }
+
+.form-submit:disabled {
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
-.form-button:hover:not(:disabled) {
-  opacity: 0.9;
+.contact__recaptcha {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact__recaptcha a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact__error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.contact__success {
+  text-align: center;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: var(--primary);
+}
+
+.contact__success h3 {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  color: var(--text);
+}
+
+.contact__success p {
+  color: var(--text-muted);
 }
 
 .grecaptcha-badge {
   visibility: visible !important;
   opacity: 1 !important;
   z-index: 2147483647 !important;
-  display: block !important;
-}
-
-.recaptcha-legal-text {
-  font-size: 14px;
-  color: var(--color-muted);
-  margin-top: 16px;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.recaptcha-legal-text a {
-  color: var(--color-primary);
-  text-decoration: underline;
-  transition: color 0.3s;
-}
-
-.recaptcha-legal-text a:hover {
-  text-decoration: underline;
-}
-
-.contact-success-message {
-  padding: 24px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
-}
-
-.contact-success-title {
-  font-size: 20px;
-  font-weight: bold;
 }

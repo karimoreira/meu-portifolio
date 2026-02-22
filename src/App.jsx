@@ -17,39 +17,44 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const body = document.body;
-    const html = document.documentElement;
-    const navbar = document.querySelector('.navbar');
-
-    body.className = '';
-    html.className = '';
-    navbar.className = 'navbar';
-
-    if (theme === 'light') {
-      body.classList.add('light-theme');
-      html.classList.add('light-theme');
-      navbar.classList.add('light-theme');
-    }
+    document.body.className = theme === 'light' ? 'light-theme' : '';
+    document.documentElement.className = theme === 'light' ? 'light-theme' : '';
   }, [theme]);
 
   return (
-    <div className="site-container">
-      <Navbar theme={theme} setTheme={setTheme} />
-      <main>
-        <Hero />
-        <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
-          <Projects />
-          <Skills />
-          <Contact />
-        </Suspense>
-      </main>
-      
-      <footer className="site-footer">
-        <p>Desenvolvido por <a href={personalData.social.linkedin} target="_blank" rel="noopener noreferrer" className="footer-name">Kari Atílio Moreira</a></p>
-        <p className="copyright-container"><span className="copyright-symbol">©</span> 2026 atiliodev.com</p>
-      </footer>
-    </div>
-  )
+    <>
+      <div className="noise-overlay" />
+
+      <div className="app">
+        <Navbar theme={theme} setTheme={setTheme} />
+        <main>
+          <Hero />
+          <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
+            <Projects />
+            <Skills />
+            <Contact />
+          </Suspense>
+        </main>
+
+        <footer className="footer">
+          <div className="footer__inner">
+            <p>
+              Desenvolvido por{' '}
+              <a
+                href={personalData.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer__link"
+              >
+                Kari Atílio Moreira
+              </a>
+            </p>
+            <p className="footer__copy">© 2026 atiliodev.com</p>
+          </div>
+        </footer>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
