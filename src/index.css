@@ -529,13 +529,13 @@ button { font: inherit; cursor: pointer; }
 }
 
 .hero__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   transform: scale(0.8);
   transition: all 1s var(--ease-out-expo);
   transition-delay: 0.8s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero__visual.animate-in {
@@ -543,119 +543,42 @@ button { font: inherit; cursor: pointer; }
   transform: scale(1);
 }
 
-.hero-orb {
+.hero-photo {
   position: relative;
-  width: clamp(300px, 30vw, 480px);
-  height: clamp(300px, 30vw, 480px);
+  width: clamp(280px, 22vw, 380px);
+  aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-orb__rays {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-orb__ray {
-  position: absolute;
-  width: var(--width, 2px);
-  height: var(--length);
-  background: linear-gradient(
-    to top,
-    transparent,
-    hsl(var(--hue), 80%, 65%)
-  );
-  transform-origin: bottom center;
-  transform: rotate(var(--angle)) translateY(calc(var(--length) * -0.5 - 50px));
-  opacity: 0;
-  border-radius: 4px;
-  animation: ray-pulse 4s ease-in-out infinite;
-  animation-delay: var(--delay);
-}
-
-@keyframes ray-pulse {
-  0%, 100% { opacity: 0; transform: rotate(var(--angle)) translateY(calc(var(--length) * -0.5 - 50px)) scaleY(0.3); }
-  15% { opacity: 0.7; }
-  50% { opacity: 0.9; transform: rotate(var(--angle)) translateY(calc(var(--length) * -1 - 60px)) scaleY(1); }
-  85% { opacity: 0.2; }
-}
-
-.hero-orb__sphere {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  transition: transform 0.3s ease-out;
-  z-index: 2;
-}
-
-.hero-orb__core {
-  position: absolute;
-  inset: 20px;
+  padding: 5px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%,
-    hsl(190, 100%, 70%),
-    hsl(260, 80%, 50%),
-    hsl(320, 70%, 40%)
+  background: conic-gradient(
+    from var(--photo-angle, 0deg),
+    #E40303, #FF8C00, #FFED00, #008026, #24408E, #732982, #E40303
   );
   box-shadow:
-    0 0 40px var(--glow),
-    0 0 80px var(--glow-secondary),
-    inset 0 0 20px rgba(255,255,255,0.2);
-  animation: core-breathe 4s ease-in-out infinite;
+    0 0 30px rgba(228, 3, 3, 0.2),
+    0 0 60px rgba(115, 41, 130, 0.15);
+  animation: photo-border-spin 6s linear infinite;
 }
 
-@keyframes core-breathe {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 40px var(--glow), 0 0 80px var(--glow-secondary), inset 0 0 20px rgba(255,255,255,0.2); }
-  50% { transform: scale(1.08); box-shadow: 0 0 60px var(--glow), 0 0 120px var(--glow-secondary), inset 0 0 30px rgba(255,255,255,0.3); }
+@property --photo-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
-.hero-orb__glow {
-  position: absolute;
-  inset: -40px;
+@keyframes photo-border-spin {
+  to { --photo-angle: 360deg; }
+}
+
+.hero-photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
-  opacity: 0.5;
-  animation: glow-pulse 4s ease-in-out infinite;
-}
-
-@keyframes glow-pulse {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(1.15); }
-}
-
-.hero-orb__ring {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1px solid;
-}
-
-.hero-orb__ring--1 {
-  inset: -10px;
-  border-color: rgba(0, 216, 255, 0.2);
-  animation: ring-spin 20s linear infinite;
-}
-
-.hero-orb__ring--2 {
-  inset: -25px;
-  border-color: rgba(168, 85, 247, 0.15);
-  animation: ring-spin 30s linear infinite reverse;
-}
-
-.hero-orb__ring--3 {
-  inset: -45px;
-  border-color: rgba(249, 115, 22, 0.1);
-  animation: ring-spin 40s linear infinite;
-  border-style: dashed;
-}
-
-@keyframes ring-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  display: block;
 }
 
 .hero__scroll-indicator {
@@ -733,9 +656,8 @@ button { font: inherit; cursor: pointer; }
   .hero__blob--2 { width: 250px; height: 250px; }
   .hero__blob--3 { width: 200px; height: 200px; }
 
-  .hero-orb {
-    width: 280px;
-    height: 280px;
+  .hero-photo {
+    width: 260px;
   }
 }
 

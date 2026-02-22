@@ -3,47 +3,6 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 import { useTextScramble } from '../hooks/useTextScramble';
 
-const RAYS_COUNT = 40;
-
-function HeroOrb() {
-  const rays = Array.from({ length: RAYS_COUNT }, (_, i) => {
-    const angle = (360 / RAYS_COUNT) * i + (Math.random() * 6 - 3);
-    const length = 70 + Math.random() * 100;
-    const delay = Math.random() * 4;
-    const hue = (angle + 180) % 360;
-    const width = 1.5 + Math.random() * 2;
-    return { angle, length, delay, hue, width };
-  });
-
-  return (
-    <div className="hero-orb">
-      <div className="hero-orb__rays">
-        {rays.map((ray, i) => (
-          <div
-            key={i}
-            className="hero-orb__ray"
-            style={{
-              '--angle': `${ray.angle}deg`,
-              '--length': `${ray.length}px`,
-              '--delay': `${ray.delay}s`,
-              '--hue': ray.hue,
-              '--width': `${ray.width}px`,
-            }}
-          />
-        ))}
-      </div>
-
-      <div className="hero-orb__sphere">
-        <div className="hero-orb__ring hero-orb__ring--1" />
-        <div className="hero-orb__ring hero-orb__ring--2" />
-        <div className="hero-orb__ring hero-orb__ring--3" />
-        <div className="hero-orb__core" />
-        <div className="hero-orb__glow" />
-      </div>
-    </div>
-  );
-}
-
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
   const scrambledName = useTextScramble(personalData.name, { delay: 500, trigger: loaded });
@@ -139,7 +98,14 @@ export default function Hero() {
         </div>
 
         <div className={`hero__visual ${loaded ? 'animate-in' : ''}`}>
-          <HeroOrb />
+          <div className="hero-photo">
+            <img
+              src="/img/perfil.webp"
+              alt={personalData.name}
+              className="hero-photo__img"
+              loading="eager"
+            />
+          </div>
         </div>
       </div>
 
