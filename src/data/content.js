@@ -76,8 +76,8 @@ export const projects = [
     tech: ["Java", "React", "TypeScript", "Axios", "CSS", "H2 Database"],
     image: "img/taskboard.webp"
   },
-  {
-    id: 9,
+    {
+    id: 5,
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
     description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
@@ -110,11 +110,11 @@ export const projects = [
   },
   {
     id: 9,
-    tag: "Cafeteria",
-    title: "Cafeteria Ctrl+Coffee",
-    description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
-    tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
-    image: "img/frontcoffee.webp"
+    tag: "Agência de Viagens",
+    title: "Trip Brasil",
+    description: "Website de agência de viagens especializado em destinos brasileiros.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "img/tripbrasil.webp"
   },
   {
     id: 10,
