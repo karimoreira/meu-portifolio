@@ -64,6 +64,22 @@ html {
   scroll-behavior: smooth;
   scrollbar-color: var(--primary) var(--bg);
   -webkit-font-smoothing: antialiased;
+  transition: scrollbar-color 0.4s;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--bg);
+  transition: background-color 0.4s;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+  transition: background-color 0.4s;
 }
 
 body {
@@ -730,10 +746,7 @@ button { font: inherit; cursor: pointer; }
   color: var(--primary);
   text-decoration: underline;
   text-underline-offset: 3px;
-  transition: opacity 0.3s;
 }
-
-.footer__link:hover { opacity: 0.7; }
 
 .footer__copy {
   margin-top: 8px;
