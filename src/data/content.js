@@ -56,7 +56,7 @@ export const projects = [
   },
   {
     id: 3,
-    tag: "Saúde",
+    tag: "Sistema de Saúde",
     title: "Agendamento Médico",
     description: "Solução completa dividida em API, Mobile e Web. Ampliou meus conhecimentos técnicos sobre a importância de soluções na área da saúde. Inclui gestão de agendamentos e pacientes.",
     tech: ["React", "Vite", "Expo", "SQLite", "API REST"],
@@ -65,6 +65,15 @@ export const projects = [
   },
   {
     id: 4,
+    tag: "Gerenciador de Tarefas",
+    title: "Taskboard",
+    description: "Gerenciador de tarefas diárias voltado para estudo, trabalho e organização pessoal. Backend em Java 25 com Spring Boot 4, Spring Data JPA, Hibernate 7 e H2 Database. Frontend em React 18 com TypeScript, Vite, Axios, React Router v6 e CSS puro. Documentação via Swagger/OpenAPI 3.",
+    tech: ["Java", "React", "TypeScript", "Axios", "CSS", "H2 Database"],
+    repo: "https://github.com/karimoreira/taskboard",
+    image: "img/taskboard.webp"
+  },
+  {
+    id: 5,
     tag: "Agência de Viagens",
     title: "Trip Brasil",
     description: "Website de agência de viagens especializado em destinos brasileiros.",
@@ -73,7 +82,7 @@ export const projects = [
     image: "img/tripbrasil.webp"
   },
   {
-    id: 5,
+    id: 6,
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
     description: "Aplicação web para acessar e pesquisar livros de programação. Carrega automaticamente livros do diretório e gera metadados. Foco em democratizar o acesso ao conhecimento técnico.",
@@ -82,7 +91,7 @@ export const projects = [
     image: "img/bibliotecadelivros.webp"
   },
   {
-    id: 6,
+    id: 7,
     tag: "Hospedagem de Sites",
     title: "Host Site",
     description: "Serviço de hospedagem de sites. Permite visualizar planos e recursos. Proposta de permitir que qualquer pessoa coloque seu site no ar com poucos cliques.",
@@ -91,7 +100,7 @@ export const projects = [
     image: "img/hostsite.webp"
   },
   {
-    id: 7,
+    id: 8,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
     description: "Landing page inspirada na SpaceX. O projeto apresenta um layout responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
@@ -100,7 +109,7 @@ export const projects = [
     image: "img/space-x.webp"
   },
   {
-    id: 8,
+    id: 9,
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
     description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
@@ -109,7 +118,7 @@ export const projects = [
     image: "img/frontcoffee.webp"
   },
   {
-    id: 9,
+    id: 10,
     tag: "Java Desktop",
     title: "Gestão de Clientes",
     description: "Sistema desktop com autenticação, criptografia e banco SQLite. Conta com filtros de busca, backup e geração de relatórios (JasperReports). A interface é a clássica do Java, focada em funcionalidade.",
@@ -118,7 +127,7 @@ export const projects = [
     image: "img/cadastro.webp"
   },
   {
-    id: 10,
+    id: 11,
     tag: "Pokédex",
     title: "Consulta de Pokémons",
     description: "Aplicação responsiva que consome a PokéAPI via requisições assíncronas para renderizar cards dinâmicos. Implementa paginação, filtragem por tipos e busca eficiente.",
@@ -127,7 +136,7 @@ export const projects = [
     image: "img/pokedex.webp"
   },
   {
-    id: 11,
+    id: 12,
     tag: "Animação",
     title: "Sistema Solar",
     description: "Simulação visual dos planetas orbitando o Sol, incluindo a Lua e a Terra. As órbitas são traçadas com efeitos de rotação e velocidades proporcionais ao tempo orbital real.",
@@ -136,8 +145,8 @@ export const projects = [
     image: "img/sistemasolar.webp"
   },
   {
-    id: 12,
-    tag: "Game",
+    id: 13,
+    tag: "Jogo da memória",
     title: "Memory Game Rick & Morty",
     description: "Jogo de memória temático desafiando usuários a encontrar pares de cartas dos personagens da série. Experiência divertida e interativa para testar a memória.",
     tech: ["JavaScript", "HTML", "CSS3"],

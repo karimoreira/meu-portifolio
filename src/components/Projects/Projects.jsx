@@ -7,7 +7,7 @@ export default function Projects() {
     <section id="projects" className="projects-section">
       <div className="container-custom">
         <h2 className="section-title">
-          Alguns Projetos
+          Alguns dos projetos:
         </h2>
 
         <div className="grid-layout">
