@@ -5,27 +5,20 @@ export default function Navbar({ theme, setTheme }) {
   const [isOpen, setIsOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [progress, setProgress] = useState(0);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-
-      setProgress(docHeight > 0 ? (y / docHeight) * 100 : 0);
       setScrolled(y > 50);
-
       if (y > lastScrollY.current && y > 100) {
         setHidden(true);
         setIsOpen(false);
       } else {
         setHidden(false);
       }
-
       lastScrollY.current = y;
     };
-
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -50,7 +43,6 @@ export default function Navbar({ theme, setTheme }) {
 
   return (
     <nav className={`nav ${hidden ? 'nav--hidden' : ''} ${scrolled ? 'nav--scrolled' : ''}`}>
-      <div className="nav__progress" style={{ width: `${progress}%` }} />
 
       <div className="nav__inner">
         <a
