@@ -3,6 +3,47 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
 import { useTextScramble } from '../hooks/useTextScramble';
 
+const RAYS_COUNT = 40;
+
+function HeroOrb() {
+  const rays = Array.from({ length: RAYS_COUNT }, (_, i) => {
+    const angle = (360 / RAYS_COUNT) * i + (Math.random() * 6 - 3);
+    const length = 70 + Math.random() * 100;
+    const delay = Math.random() * 4;
+    const hue = (angle + 180) % 360;
+    const width = 1.5 + Math.random() * 2;
+    return { angle, length, delay, hue, width };
+  });
+
+  return (
+    <div className="hero-orb">
+      <div className="hero-orb__rays">
+        {rays.map((ray, i) => (
+          <div
+            key={i}
+            className="hero-orb__ray"
+            style={{
+              '--angle': `${ray.angle}deg`,
+              '--length': `${ray.length}px`,
+              '--delay': `${ray.delay}s`,
+              '--hue': ray.hue,
+              '--width': `${ray.width}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="hero-orb__sphere">
+        <div className="hero-orb__ring hero-orb__ring--1" />
+        <div className="hero-orb__ring hero-orb__ring--2" />
+        <div className="hero-orb__ring hero-orb__ring--3" />
+        <div className="hero-orb__core" />
+        <div className="hero-orb__glow" />
+      </div>
+    </div>
+  );
+}
+
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
   const scrambledName = useTextScramble(personalData.name, { delay: 500, trigger: loaded });
@@ -98,40 +139,7 @@ export default function Hero() {
         </div>
 
         <div className={`hero__visual ${loaded ? 'animate-in' : ''}`}>
-          <div className="code-window">
-            <div className="code-window__header">
-              <div className="code-window__dot code-window__dot--red" />
-              <div className="code-window__dot code-window__dot--yellow" />
-              <div className="code-window__dot code-window__dot--green" />
-              <span className="code-window__title">developer.js</span>
-            </div>
-
-            <div className="code-window__body">
-              <div className="code-line">
-                <span className="code-ln">1</span>
-                <span className="c-keyword">const</span> developer = <span className="c-bracket">{'{'}</span>
-              </div>
-              <div className="code-line">
-                <span className="code-ln">2</span>
-                <span className="indent" /><span className="c-prop">name</span>: <span className="c-str">'{personalData.name}'</span>,
-              </div>
-              <div className="code-line">
-                <span className="code-ln">3</span>
-                <span className="indent" /><span className="c-prop">skills</span>:{' '}
-                <a href="#skills" className="code-link" onClick={(e) => scrollToSection(e, '#skills')}>
-                  <span className="c-keyword">this</span>.<span className="c-fn">showAll</span><span className="c-bracket">()</span>
-                </a>,
-              </div>
-              <div className="code-line">
-                <span className="code-ln">4</span>
-                <span className="indent" /><span className="c-prop">education</span>: <span className="c-str">'Análise e Des. de Sistemas'</span>
-              </div>
-              <div className="code-line">
-                <span className="code-ln">5</span>
-                <span className="c-bracket">{'}'}</span>;
-              </div>
-            </div>
-          </div>
+          <HeroOrb />
         </div>
       </div>
 
