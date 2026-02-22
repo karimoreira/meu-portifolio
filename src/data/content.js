@@ -131,21 +131,5 @@ export const projects = [
     description: "Aplicação responsiva que consome a PokéAPI via requisições assíncronas para renderizar cards dinâmicos. Implementa paginação, filtragem por tipos e busca eficiente.",
     tech: ["JavaScript", "Fetch API", "HTML5", "CSS3"],
     image: "img/pokedex.webp"
-  },
-  {
-    id: 12,
-    tag: "Animação",
-    title: "Sistema Solar",
-    description: "Simulação visual dos planetas orbitando o Sol, incluindo a Lua e a Terra. As órbitas são traçadas com efeitos de rotação e velocidades proporcionais ao tempo orbital real.",
-    tech: ["CSS", "HTML5", "Frontend"],
-    image: "img/sistemasolar.webp"
-  },
-  {
-    id: 13,
-    tag: "Jogo da memória",
-    title: "Memory Game Rick & Morty",
-    description: "Jogo de memória temático desafiando usuários a encontrar pares de cartas dos personagens da série. Experiência divertida e interativa para testar a memória.",
-    tech: ["JavaScript", "HTML", "CSS3"],
-    image: "img/jogodamemoria.webp"
   }
 ];
