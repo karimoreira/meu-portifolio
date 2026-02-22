@@ -51,10 +51,17 @@ function ProjectCard({ project, index }) {
             className="project-card__image"
             loading="lazy"
             decoding="async"
-            width="600"
-            height="400"
+            width="387"
+            height="200"
+            srcSet={
+              project.image === "img/jogo-de-cartas-duelo.webp"
+                ? "/img/jogo-de-cartas-duelo.webp 387w, /img/jogo-de-cartas-duelo.webp 200w"
+                : project.image === "img/gamerstore.webp"
+                ? "/img/gamerstore.webp 387w, /img/gamerstore.webp 200w"
+                : undefined
+            }
+            sizes="(max-width: 600px) 90vw, 387px"
           />
-
         </div>
 
         <div className="project-card__body">
