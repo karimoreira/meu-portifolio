@@ -24,7 +24,7 @@
 }
 
 .contact__title-dot {
-  color: var(--primary);
+  color: inherit;
 }
 
 .contact__subtitle {
@@ -69,8 +69,8 @@
 }
 
 .form-field:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px var(--glow);
+  border-color: var(--border-hover);
+  box-shadow: 0 0 0 2px var(--glow);
 }
 
 .form-label-float {
@@ -101,19 +101,7 @@
 }
 
 .form-line {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
-  transition: all 0.3s var(--ease-out-expo);
-  transform: translateX(-50%);
-  border-radius: 0 0 12px 12px;
-}
-
-.form-field:focus ~ .form-line {
-  width: 100%;
+  display: none;
 }
 
 .form-error {

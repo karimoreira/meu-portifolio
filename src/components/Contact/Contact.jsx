@@ -143,7 +143,7 @@ export default function Contact() {
           </button>
 
           <p className="contact__recaptcha">
-            Protegido por reCAPTCHA.{' '}
+            Este formulário é protegido por reCAPTCHA. Consulte{' '}
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacidade</a> e{' '}
             <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Termos</a> do Google.
           </p>
