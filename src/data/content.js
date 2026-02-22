@@ -53,20 +53,20 @@ export const projects = [
     image: "img/gamerstore.webp"
   },
   {
-    id: 2,
-    tag: "Rede Social",
-    title: "Ping",
-    description: "Rede social focada em conexões reais. Permite aos usuários postar atualizações apenas para seus amigos, com a opção deseguir e interagir por meio de curtidas, compartilhamentos e comentários sem ser sufocado por anúncios ou assuntos irrelevantes. Como as redes sociais eram há alguns anos.",
-    tech: ["HTML", "CSS", "Javascript", "Node.js", "SQLite"],
-    image: "img/ping-rede-social.webp"
-  },
-  {
     id: 3,
     tag: "Sistema de Saúde",
     title: "Agendamento Médico",
     description: "Solução completa dividida em API, Mobile e Web. Ampliou meus conhecimentos técnicos sobre a importância de soluções na área da saúde. Inclui gestão de agendamentos e pacientes.",
     tech: ["React", "Vite", "Expo", "SQLite", "API REST"],
     image: "img/criarconta.webp"
+  },
+  {
+    id: 2,
+    tag: "Rede Social",
+    title: "Ping",
+    description: "Rede social focada em conexões reais. Permite aos usuários postar atualizações apenas para seus amigos, com a opção deseguir e interagir por meio de curtidas, compartilhamentos e comentários sem ser sufocado por anúncios ou assuntos irrelevantes. Como as redes sociais eram há alguns anos.",
+    tech: ["HTML", "CSS", "Javascript", "Node.js", "SQLite"],
+    image: "img/ping-rede-social.webp"
   },
   {
     id: 4,
@@ -77,12 +77,12 @@ export const projects = [
     image: "img/taskboard.webp"
   },
   {
-    id: 5,
-    tag: "Agência de Viagens",
-    title: "Trip Brasil",
-    description: "Website de agência de viagens especializado em destinos brasileiros.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: "img/tripbrasil.webp"
+    id: 9,
+    tag: "Cafeteria",
+    title: "Cafeteria Ctrl+Coffee",
+    description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
+    tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
+    image: "img/frontcoffee.webp"
   },
   {
     id: 6,
