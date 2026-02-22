@@ -710,7 +710,7 @@ button { font: inherit; cursor: pointer; }
   text-align: center;
   font-family: var(--font-mono);
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--text);
 }
 
 .footer__link {
@@ -721,5 +721,6 @@ button { font: inherit; cursor: pointer; }
 
 .footer__copy {
   margin-top: 8px;
-  opacity: 0.6;
+  color: var(--text);
+  opacity: 1;
 }
