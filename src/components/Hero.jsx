@@ -100,9 +100,9 @@ export default function Hero() {
         <div className={`hero__visual ${loaded ? 'animate-in' : ''}`}>
           <div className="hero-photo">
             <img
-              src="/img/perfil.webp"
-              alt={personalData.name}
-              className="hero-photo__img"
+              src="/img/code.webp"
+              alt="Code Animation"
+              className="hero-photo__img hero-photo__img--transparent"
               loading="eager"
             />
           </div>
