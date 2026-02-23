@@ -47,6 +47,8 @@ function ProjectCard({ project, index }) {
         <div className="project-card__image-wrap">
           <img
             src={project.image}
+            srcSet={`${project.image} 1919w, ${project.image.replace('.webp', '-800w.webp')} 800w, ${project.image.replace('.webp', '-400w.webp')} 400w`}
+            sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 400px"
             alt={project.title}
             className="project-card__image"
             loading="lazy"
