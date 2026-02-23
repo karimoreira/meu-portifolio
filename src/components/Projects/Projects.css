@@ -1,5 +1,4 @@
 .projects {
-  padding: clamp(60px, 12vh, 120px) 0;
   background: var(--bg);
 }
 
