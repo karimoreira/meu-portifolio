@@ -88,12 +88,10 @@ export default function Hero() {
           <div className="hero-photo">
             <img
               src="/img/code.webp"
-              srcSet="/img/code.webp 2000w, /img/code-720w.webp 720w, /img/code-360w.webp 360w"
-              sizes="(max-width: 768px) 360px, 360px"
               alt="Code Animation"
               className="hero-photo__img hero-photo__img--transparent"
               width="360"
-              height="360"
+              height="228"
               fetchpriority="high"
             />
           </div>
