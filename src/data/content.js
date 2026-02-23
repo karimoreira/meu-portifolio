@@ -3,7 +3,7 @@ import { Code, Database, Cloud, Terminal } from 'lucide-react';
 export const personalData = {
   name: "Kari Atílio",
   role: "Desenvolvedor full stack",
-  about: "Atuo hoje em uma empresa brasileira de tecnologia, criando aplicações estruturadas e alinhadas aos objetivos de cada projeto proposto. Além do desenvolvimento web, também atuei com suporte de TI, vendas em TI e sou técnico em Informática, o que amplia minha visão de infraestrutura, operação e atendimento. Tenho formação em perícia forense computacional, trazendo uma perspectiva ampla em análises.",
+  about: "Atuo hoje em uma empresa brasileira de tecnologia, criando aplicações estruturadas e alinhadas aos objetivos de cada projeto proposto. Além do desenvolvimento web, também atuei com suporte de TI, vendas em TI e sou técnico em Informática. Tenho formação em perícia forense computacional e estou no último período de Análise e Desenvolvimento de Sistemas.",
   resumeUrl: "/Curriculo_Kari_Atilio.pdf",
   social: {
     github: "https://github.com/karimoreira",
@@ -40,7 +40,7 @@ export const projects = [
     id: 0,
     tag: "Game Yu-Gi-Oh!",
     title: "Jogo de Cartas, Duelo das sombras",
-    description: "Jogo de cartas inspirado em Yu-Gi-Oh! com interface web, desenvolvido em HTML, CSS e JavaScript. Permite duelos interativos e simulação de partidas.",
+    description: "Duelo de cartas interativo inspirado em Yu-Gi-Oh!, com simulação de partidas no navegador.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "img/jogo-de-cartas-duelo.webp"
   },
@@ -48,7 +48,7 @@ export const projects = [
     id: 1,
     tag: "E-commerce TECH Full Stack",
     title: "Gam3r.store",
-    description: "E-commerce Full Stack arquitetado como monorepo (TurboRepo). Backend em NestJS com Prisma e PostgreSQL, Frontend em React. Conta com autenticação, gestão de produtos e banco de dados populado via seed.",
+    description: "E-commerce Full Stack com monorepo, autenticação, gestão de produtos e banco de dados.",
     tech: ["NestJS", "React", "TypeScript", "Prisma", "PostgreSQL", "Docker"],
     image: "img/gamerstore.webp"
   },
@@ -56,7 +56,7 @@ export const projects = [
     id: 3,
     tag: "Sistema de Saúde",
     title: "Agendamento Médico",
-    description: "Solução completa dividida em API, Mobile e Web. Ampliou meus conhecimentos técnicos sobre a importância de soluções na área da saúde. Inclui gestão de agendamentos e pacientes.",
+    description: "Solução completa em API, Mobile e Web para gestão de agendamentos e pacientes.",
     tech: ["React", "Vite", "Expo", "SQLite", "API REST"],
     image: "img/criarconta.webp"
   },
@@ -64,7 +64,7 @@ export const projects = [
     id: 2,
     tag: "Rede Social",
     title: "Ping",
-    description: "Rede social focada em conexões reais. Permite aos usuários postar atualizações apenas para seus amigos, com a opção deseguir e interagir por meio de curtidas, compartilhamentos e comentários sem ser sufocado por anúncios ou assuntos irrelevantes. Como as redes sociais eram há alguns anos.",
+    description: "Rede social sem anúncios focada em conexões reais, com curtidas, comentários, compartilhamentos e feed privado para amigos.",
     tech: ["HTML", "CSS", "Javascript", "Node.js", "SQLite"],
     image: "img/ping-rede-social.webp"
   },
@@ -72,15 +72,15 @@ export const projects = [
     id: 4,
     tag: "Gerenciador de Tarefas",
     title: "Taskboard",
-    description: "Gerenciador de tarefas diárias voltado para estudo, trabalho e organização pessoal. Backend em Java 25 com Spring Boot 4, Spring Data JPA, Hibernate 7 e H2 Database. Frontend em React 18 com TypeScript, Vite, Axios, React Router v6 e CSS puro. Documentação via Swagger/OpenAPI 3.",
+    description: "Gerenciador de tarefas com backend em Spring Boot e frontend em React com TypeScript.",
     tech: ["Java", "React", "TypeScript", "Axios", "CSS", "H2 Database"],
     image: "img/taskboard.webp"
   },
-    {
+  {
     id: 5,
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
-    description: "Aplicação completa para uma cafeteria, oferecendo funcionalidades como exibição de cardápio, carrinho de compras, contato e finalização de pedidos. Foco em usabilidade e minimalismo.",
+    description: "Aplicação para cafeteria com cardápio, carrinho de compras e finalização de pedidos.",
     tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
     image: "img/frontcoffee.webp"
   },
@@ -88,7 +88,7 @@ export const projects = [
     id: 6,
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
-    description: "Aplicação web para acessar e pesquisar livros de programação. Carrega automaticamente livros do diretório e gera metadados. Foco em democratizar o acesso ao conhecimento técnico.",
+    description: "Plataforma web para acessar e pesquisar livros de programação com geração automática de metadados.",
     tech: ["Python", "JavaScript", "JSON", "HTML/CSS"],
     image: "img/bibliotecadelivros.webp"
   },
@@ -96,7 +96,7 @@ export const projects = [
     id: 7,
     tag: "Hospedagem de Sites",
     title: "Host Site",
-    description: "Serviço de hospedagem de sites. Permite visualizar planos e recursos. Proposta de permitir que qualquer pessoa coloque seu site no ar com poucos cliques.",
+    description: "Landing page de serviço de hospedagem com exibição de planos e recursos disponíveis.",
     tech: ["HTML5", "CSS3"],
     image: "img/hostsite.webp"
   },
@@ -104,7 +104,7 @@ export const projects = [
     id: 8,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
-    description: "Landing page inspirada na SpaceX. O projeto apresenta um layout responsivo e com efeitos visuais ao passar o mouse nos elementos, destacando seções com as informações dos últimos eventos da empresa, missões e foguetes lançados.",
+    description: "Landing page responsiva inspirada na SpaceX, com efeitos visuais e seções de missões.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     image: "img/space-x.webp"
   },
@@ -120,7 +120,7 @@ export const projects = [
     id: 10,
     tag: "Java Desktop",
     title: "Gestão de Clientes",
-    description: "Sistema desktop com autenticação, criptografia e banco SQLite. Conta com filtros de busca, backup e geração de relatórios (JasperReports). A interface é a clássica do Java, focada em funcionalidade.",
+    description: "Sistema desktop com autenticação, criptografia, filtros de busca e geração de relatórios.",
     tech: ["Java", "Swing", "SQLite", "JDBC", "MVC"],
     image: "img/cadastro.webp"
   },
@@ -128,7 +128,7 @@ export const projects = [
     id: 11,
     tag: "Pokédex",
     title: "Consulta de Pokémons",
-    description: "Aplicação responsiva que consome a PokéAPI via requisições assíncronas para renderizar cards dinâmicos. Implementa paginação, filtragem por tipos e busca eficiente.",
+    description: "Pokédex responsiva com consumo da PokéAPI, paginação e filtragem por tipos.",
     tech: ["JavaScript", "Fetch API", "HTML5", "CSS3"],
     image: "img/pokedex.webp"
   }
