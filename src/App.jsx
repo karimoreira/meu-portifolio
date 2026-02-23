@@ -1,11 +1,10 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import Contact from './components/Contact/Contact';
 import { personalData } from './data/content';
-
-const Projects = lazy(() => import('./components/Projects/Projects'));
-const Skills = lazy(() => import('./components/Skills/Skills'));
-const Contact = lazy(() => import('./components/Contact/Contact'));
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -29,10 +28,9 @@ function App() {
         <Navbar theme={theme} setTheme={setTheme} />
         <main>
           <Hero />
-          
-            <Projects />
-            <Skills />
-            <Contact />
+          <Projects />
+          <Skills />
+          <Contact />
 
         </main>
 

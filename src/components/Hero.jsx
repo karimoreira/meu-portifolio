@@ -15,11 +15,6 @@ export default function Hero() {
 
   return (
     <section id="about" className="hero">
-      <div className="hero__blobs">
-        <div className="hero__blob hero__blob--1" />
-        <div className="hero__blob hero__blob--2" />
-        <div className="hero__blob hero__blob--3" />
-      </div>
 
       <div className="hero__content">
         <div className="hero__text">
