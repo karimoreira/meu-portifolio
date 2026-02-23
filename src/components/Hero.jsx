@@ -1,16 +1,8 @@
-import { useState, useEffect } from 'react';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { personalData } from '../data/content';
-import { useTextScramble } from '../hooks/useTextScramble';
 
 export default function Hero() {
-  const [loaded, setLoaded] = useState(false);
-  const scrambledName = useTextScramble(personalData.name, { delay: 500, trigger: loaded });
-  const scrambledRole = useTextScramble(personalData.role, { delay: 1200, speed: 30, trigger: loaded });
 
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
 
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -31,25 +23,25 @@ export default function Hero() {
 
       <div className="hero__content">
         <div className="hero__text">
-          <p className={`hero__greeting ${loaded ? 'animate-in' : ''}`}>
+          <p className="hero__greeting">
             <span className="hero__greeting-bracket">&lt;</span>
             Olá, mundo!
             <span className="hero__greeting-bracket"> /&gt;</span>
           </p>
 
-          <h1 className={`hero__name ${loaded ? 'animate-in' : ''}`}>
-            {scrambledName || '\u00A0'}
+          <h1 className="hero__name">
+            {personalData.name}
           </h1>
 
-          <h2 className={`hero__role ${loaded ? 'animate-in' : ''}`}>
-            {scrambledRole || '\u00A0'}
+          <h2 className="hero__role">
+            {personalData.role}
           </h2>
 
-          <p className={`hero__about ${loaded ? 'animate-in' : ''}`}>
+          <p className="hero__about">
             {personalData.about}
           </p>
 
-          <div className={`hero__actions ${loaded ? 'animate-in' : ''}`}>
+          <div className="hero__actions">
             <a
               href="#projects"
               className="btn-primary"
@@ -97,7 +89,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className={`hero__visual ${loaded ? 'animate-in' : ''}`}>
+        <div className="hero__visual">
           <div className="hero-photo">
             <img
               src="/img/code.webp"
@@ -111,7 +103,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className={`hero__scroll-indicator ${loaded ? 'animate-in' : ''}`}>
+      <div className="hero__scroll-indicator">
         <div className="scroll-line" />
       </div>
     </section>
