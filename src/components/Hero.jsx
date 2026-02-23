@@ -105,7 +105,7 @@ export default function Hero() {
               className="hero-photo__img hero-photo__img--transparent"
               width="360"
               height="228"
-              srcSet="/img/code.webp 360w, /img/code.webp 228w"
+              srcSet="/img/code-360x228.webp 360w, /img/code.webp 1500w"
               sizes="(max-width: 600px) 90vw, 360px"
               fetchpriority="high"
             />
