@@ -29,11 +29,11 @@ function App() {
         <Navbar theme={theme} setTheme={setTheme} />
         <main>
           <Hero />
-          <Suspense fallback={<div style={{ minHeight: '100vh', background: 'var(--bg)' }} />}>
+          
             <Projects />
             <Skills />
             <Contact />
-          </Suspense>
+
         </main>
 
         <footer className="footer">
