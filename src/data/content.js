@@ -38,6 +38,14 @@ export const skills = [
 export const projects = [
   {
     id: 0,
+    tag: "Landing page ",
+    title: "Sorveteria",
+    description: "Landing page completa para sorveteria artesanal com cardápio interativo, scroll animado por sabor e experiência visual imersiva.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    video: "medias/sorveteria.webm"
+  },
+  {
+    id: 1,
     tag: "Game Yu-Gi-Oh!",
     title: "Jogo de Cartas, Duelo das sombras",
     description: "Duelo de cartas interativo inspirado em Yu-Gi-Oh!, com simulação de partidas no navegador.",
@@ -45,7 +53,7 @@ export const projects = [
     image: "img/jogo-de-cartas-duelo.webp"
   },
   {
-    id: 1,
+    id: 2,
     tag: "E-commerce TECH Full Stack",
     title: "Gam3r.store",
     description: "E-commerce Full Stack com monorepo, autenticação, gestão de produtos e banco de dados.",
@@ -61,7 +69,7 @@ export const projects = [
     image: "img/criarconta.webp"
   },
   {
-    id: 2,
+    id: 4,
     tag: "Rede Social",
     title: "Ping",
     description: "Rede social sem anúncios focada em conexões reais, com curtidas, comentários, compartilhamentos e feed privado para amigos.",
@@ -69,7 +77,7 @@ export const projects = [
     image: "img/ping-rede-social.webp"
   },
   {
-    id: 4,
+    id: 5,
     tag: "Gerenciador de Tarefas",
     title: "Taskboard",
     description: "Gerenciador de tarefas com backend em Spring Boot e frontend em React com TypeScript.",
@@ -77,7 +85,7 @@ export const projects = [
     image: "img/taskboard.webp"
   },
   {
-    id: 5,
+    id: 6,
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
     description: "Aplicação para cafeteria com cardápio, carrinho de compras e finalização de pedidos.",
@@ -85,7 +93,7 @@ export const projects = [
     image: "img/frontcoffee.webp"
   },
   {
-    id: 6,
+    id: 7,
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
     description: "Plataforma web para acessar e pesquisar livros de programação com geração automática de metadados.",
@@ -93,7 +101,7 @@ export const projects = [
     image: "img/bibliotecadelivros.webp"
   },
   {
-    id: 7,
+    id: 8,
     tag: "Hospedagem de Sites",
     title: "Host Site",
     description: "Landing page de serviço de hospedagem com exibição de planos e recursos disponíveis.",
@@ -101,7 +109,7 @@ export const projects = [
     image: "img/hostsite.webp"
   },
   {
-    id: 8,
+    id: 9,
     tag: "Site Space-X",
     title: "Landing Page SpaceX",
     description: "Landing page responsiva inspirada na SpaceX, com efeitos visuais e seções de missões.",
@@ -109,7 +117,7 @@ export const projects = [
     image: "img/space-x.webp"
   },
   {
-    id: 9,
+    id: 10,
     tag: "Agência de Viagens",
     title: "Trip Brasil",
     description: "Website de agência de viagens especializado em destinos brasileiros.",
@@ -117,7 +125,7 @@ export const projects = [
     image: "img/tripbrasil.webp"
   },
   {
-    id: 10,
+    id: 11,
     tag: "Java Desktop",
     title: "Gestão de Clientes",
     description: "Sistema desktop com autenticação, criptografia, filtros de busca e geração de relatórios.",
@@ -125,7 +133,7 @@ export const projects = [
     image: "img/cadastro.webp"
   },
   {
-    id: 11,
+    id: 12,
     tag: "Pokédex",
     title: "Consulta de Pokémons",
     description: "Pokédex responsiva com consumo da PokéAPI, paginação e filtragem por tipos.",

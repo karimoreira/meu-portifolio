@@ -80,6 +80,10 @@
   transition: transform 0.6s var(--ease-out-expo);
 }
 
+.project-card__video {
+  display: block;
+}
+
 .project-card:hover .project-card__image {
   transform: scale(1.08);
 }

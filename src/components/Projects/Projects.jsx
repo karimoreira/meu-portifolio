@@ -40,15 +40,29 @@ function ProjectCard({ project, index }) {
         <div className="project-card__glow" />
 
         <div className="project-card__image-wrap">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="project-card__image"
-            loading="lazy"
-            decoding="async"
-            width="387"
-            height="200"
-          />
+          {project.video ? (
+            <video
+              src={project.video}
+              className="project-card__image project-card__video"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              width="387"
+              height="200"
+            />
+          ) : (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-card__image"
+              loading="lazy"
+              decoding="async"
+              width="387"
+              height="200"
+            />
+          )}
         </div>
 
         <div className="project-card__body">
