@@ -61,13 +61,13 @@ export const projects = [
   {
     id: 2,
     tag: "E-commerce TECH Full Stack",
-    title: "Gam3r.store",
+    title: "Loja de Computadores",
     description: "E-commerce Full Stack com monorepo, autenticação, gestão de produtos e banco de dados.",
     image: "img/gamerstore.webp"
   },
   {
     id: 3,
-    tag: "Sistema de Saúde",
+    tag: "Sistema logado de Saúde",
     title: "Agendamento Médico",
     description: "Solução completa em API, Mobile e Web para gestão de agendamentos e pacientes.",
     image: "img/criarconta.webp"
@@ -90,29 +90,22 @@ export const projects = [
       id: 6,
       tag: "Gerenciador de Tarefas",
       title: "Taskboard",
-      description: "Gerenciador de tarefas com backend em Spring Boot e frontend em React com TypeScript.",
+      description: "Gerenciador de tarefas com backend em Java e frontend em React.",
       image: "img/taskboard.webp"
   },
   {
-    id: 6,
+    id: 7,
     tag: "Cafeteria",
-    title: "Cafeteria Ctrl+Coffee",
+    title: "Cafeteria Cerrado",
     description: "Aplicação para cafeteria com cardápio, carrinho de compras e finalização de pedidos.",
-    image: "img/frontcoffee.webp"
+    image: "img/cafeteria-cerrado.png"
   },
   {
-    id: 7,
+    id: 8,
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
     description: "Plataforma web para acessar e pesquisar livros de programação com geração automática de metadados.",
     image: "img/bibliotecadelivros.webp"
-  },
-  {
-    id: 8,
-    tag: "Hospedagem de Sites",
-    title: "Host Site",
-    description: "Landing page de serviço de hospedagem com exibição de planos e recursos disponíveis.",
-    image: "img/hostsite.webp"
   },
   {
     id: 9,
