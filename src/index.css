@@ -1,11 +1,3 @@
-.hero-photo__img--transparent {
-  background: transparent;
-}
-.hero-photo__img--transparent {
-  filter: brightness(1) saturate(1) drop-shadow(0 0 0 white) drop-shadow(0 0 0 transparent);
-}
-
-
 :root {
   --bg: #050507;
   --bg-surface: #0c0e14;
@@ -87,6 +79,12 @@ button { font: inherit; cursor: pointer; }
   color: white;
 }
 
+.hero-photo__img--transparent {
+  background: transparent;
+}
+.hero-photo__img--transparent {
+  filter: brightness(1) saturate(1) drop-shadow(0 0 0 white) drop-shadow(0 0 0 transparent);
+}
 
 
 .noise-overlay {
@@ -684,4 +682,9 @@ button { font: inherit; cursor: pointer; }
   margin-top: 8px;
   color: var(--text);
   opacity: 1;
+}
+
+.footer__copyright-symbol {
+  font-size: 24px;
+  vertical-align: middle;
 }

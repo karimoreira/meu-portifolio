@@ -48,7 +48,7 @@ function App() {
                 Kari Atílio Moreira
               </a>
             </p>
-            <p className="footer__copy">© 2026 atiliodev.com</p>
+            <p className="footer__copy"><span className="footer__copyright-symbol">©</span> 2026 atiliodev.com</p>
           </div>
         </footer>
       </div>
