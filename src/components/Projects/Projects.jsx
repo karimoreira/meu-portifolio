@@ -90,7 +90,7 @@ export default function Projects() {
           ref={titleRef}
           className={`section-heading reveal ${titleVisible ? 'visible' : ''}`}
         >
-          <span className="section-heading__label">Projetos</span>
+          <span className="section-heading__label">Destaques</span>
           <span className="section-heading__line" />
         </h2>
 

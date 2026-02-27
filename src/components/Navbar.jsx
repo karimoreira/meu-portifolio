@@ -36,7 +36,7 @@ export default function Navbar({ theme, setTheme }) {
 
   const links = [
     { name: 'Sobre', href: '#about' },
-    { name: 'Projetos', href: '#projects' },
+    { name: 'Destaques', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contato', href: '#contact' },
   ];
