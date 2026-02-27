@@ -26,7 +26,7 @@ export const skills = [
   {
     category: "Cloud",
     icon: Cloud,
-    items: ["Google Cloud", "AWS"]
+    items: ["AWS"]
   },
   {
     category: "DevOps e Tools",
