@@ -132,12 +132,5 @@ export const projects = [
     tech: ["Java", "Swing", "SQLite", "JDBC", "MVC"],
     image: "img/cadastro.webp"
   },
-  {
-    id: 12,
-    tag: "Pokédex",
-    title: "Consulta de Pokémons",
-    description: "Pokédex responsiva com consumo da PokéAPI, paginação e filtragem por tipos.",
-    tech: ["JavaScript", "Fetch API", "HTML5", "CSS3"],
-    image: "img/pokedex.webp"
-  }
+ 
 ];
