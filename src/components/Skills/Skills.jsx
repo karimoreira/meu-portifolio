@@ -47,40 +47,6 @@ export default function Skills() {
           <span className="section-heading__line" />
         </h2>
 
-        <div
-          ref={marqueeRef}
-          className={`skills__marquee-area ${marqueeVisible ? 'active' : ''}`}
-        >
-          <div className="marquee marquee--left">
-            <div className="marquee__track">
-              <div className="marquee__content">
-                {row1.map((skill, i) => (
-                  <span key={i} className="marquee__item">{skill.name}</span>
-                ))}
-              </div>
-              <div className="marquee__content" aria-hidden="true">
-                {row1.map((skill, i) => (
-                  <span key={`d-${i}`} className="marquee__item">{skill.name}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="marquee marquee--right">
-            <div className="marquee__track">
-              <div className="marquee__content">
-                {row2.map((skill, i) => (
-                  <span key={i} className="marquee__item">{skill.name}</span>
-                ))}
-              </div>
-              <div className="marquee__content" aria-hidden="true">
-                {row2.map((skill, i) => (
-                  <span key={`d-${i}`} className="marquee__item">{skill.name}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className="skills__grid">
           {skills.map((group, index) => (

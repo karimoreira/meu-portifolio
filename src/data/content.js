@@ -105,7 +105,7 @@ export const projects = [
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
     description: "Plataforma web para acessar e pesquisar livros de programação com geração automática de metadados.",
-    image: "img/bibliotecadelivros.webp"
+    image: "img/biblioteca-de-livros.png"
   },
   {
     id: 9,
