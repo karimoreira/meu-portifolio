@@ -32,21 +32,7 @@
 }
 
 .project-card__glow {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.4s;
-  pointer-events: none;
-  z-index: 1;
-  background: radial-gradient(
-    400px circle at var(--glow-x, 50%) var(--glow-y, 50%),
-    var(--glow),
-    transparent 60%
-  );
-}
-
-.project-card:hover .project-card__glow {
-  opacity: 1;
+  display: none;
 }
 
 .project-card:hover {

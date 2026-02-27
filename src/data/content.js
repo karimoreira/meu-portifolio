@@ -40,7 +40,7 @@ export const projects = [
     id: 0,
     tag: "Landing page ",
     title: "Sorveteria",
-    description: "Landing page completa para sorveteria artesanal com cardápio interativo, scroll animado por sabor e experiência visual imersiva.",
+    description: "Landing page completa para sorveteria artesanal com cardápio interativo, scroll animado por sabor.",
     tech: ["HTML", "CSS", "JavaScript"],
     video: "medias/sorveteria.webm"
   },
