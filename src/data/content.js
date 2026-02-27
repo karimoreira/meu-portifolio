@@ -41,7 +41,6 @@ export const projects = [
     tag: "Landing page ",
     title: "Sorveteria",
     description: "Landing page completa para sorveteria artesanal com cardápio interativo, scroll animado por sabor.",
-    tech: ["HTML", "CSS", "JavaScript"],
     video: "medias/sorveteria.webm"
   },
   {
@@ -49,15 +48,21 @@ export const projects = [
     tag: "Game Yu-Gi-Oh!",
     title: "Jogo de Cartas, Duelo das sombras",
     description: "Duelo de cartas interativo inspirado em Yu-Gi-Oh!, com simulação de partidas no navegador.",
-    tech: ["HTML", "CSS", "JavaScript"],
     image: "img/jogo-de-cartas-duelo.webp"
   },
+      {
+        id: 6,
+        tag: "Segurança de Rede",
+        title: "ShieldNet",
+        description: "Plataforma para proteção de redes Wi-Fi contra ataques AirSnitch, com análise de vulnerabilidades e isolamento de rede.",
+        image: "/img/project-seguranca.png",
+        link: "#",
+      },
   {
     id: 2,
     tag: "E-commerce TECH Full Stack",
     title: "Gam3r.store",
     description: "E-commerce Full Stack com monorepo, autenticação, gestão de produtos e banco de dados.",
-    tech: ["NestJS", "React", "TypeScript", "Prisma", "PostgreSQL", "Docker"],
     image: "img/gamerstore.webp"
   },
   {
@@ -65,7 +70,6 @@ export const projects = [
     tag: "Sistema de Saúde",
     title: "Agendamento Médico",
     description: "Solução completa em API, Mobile e Web para gestão de agendamentos e pacientes.",
-    tech: ["React", "Vite", "Expo", "SQLite", "API REST"],
     image: "img/criarconta.webp"
   },
   {
@@ -73,7 +77,6 @@ export const projects = [
     tag: "Rede Social",
     title: "Ping",
     description: "Rede social sem anúncios focada em conexões reais, com curtidas, comentários, compartilhamentos e feed privado para amigos.",
-    tech: ["HTML", "CSS", "Javascript", "Node.js", "SQLite"],
     image: "img/ping-rede-social.webp"
   },
     {
@@ -81,7 +84,6 @@ export const projects = [
       tag: "Landing page",
       title: "SONIQ",
       description: "Landingpage de vendas de headphone.",
-      tech: ["HTML", "CSS", "JavaScript"],
       image: "img/soniq.png"
     },
   {
@@ -89,7 +91,6 @@ export const projects = [
       tag: "Gerenciador de Tarefas",
       title: "Taskboard",
       description: "Gerenciador de tarefas com backend em Spring Boot e frontend em React com TypeScript.",
-      tech: ["Java", "React", "TypeScript", "Axios", "CSS", "H2 Database"],
       image: "img/taskboard.webp"
   },
   {
@@ -97,7 +98,6 @@ export const projects = [
     tag: "Cafeteria",
     title: "Cafeteria Ctrl+Coffee",
     description: "Aplicação para cafeteria com cardápio, carrinho de compras e finalização de pedidos.",
-    tech: ["Node.js", "Express", "Nodemailer", "JS", "HTML/CSS"],
     image: "img/frontcoffee.webp"
   },
   {
@@ -105,7 +105,6 @@ export const projects = [
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
     description: "Plataforma web para acessar e pesquisar livros de programação com geração automática de metadados.",
-    tech: ["Python", "JavaScript", "JSON", "HTML/CSS"],
     image: "img/bibliotecadelivros.webp"
   },
   {
@@ -113,32 +112,21 @@ export const projects = [
     tag: "Hospedagem de Sites",
     title: "Host Site",
     description: "Landing page de serviço de hospedagem com exibição de planos e recursos disponíveis.",
-    tech: ["HTML5", "CSS3"],
     image: "img/hostsite.webp"
   },
   {
     id: 9,
-    tag: "Site Space-X",
-    title: "Landing Page SpaceX",
-    description: "Landing page responsiva inspirada na SpaceX, com efeitos visuais e seções de missões.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    image: "img/space-x.webp"
-  },
-  {
-    id: 10,
     tag: "Agência de Viagens",
     title: "Trip Brasil",
     description: "Website de agência de viagens especializado em destinos brasileiros.",
-    tech: ["HTML", "CSS", "JavaScript"],
     image: "img/tripbrasil.webp"
   },
   {
-    id: 11,
+    id: 10,
     tag: "Java Desktop",
     title: "Gestão de Clientes",
     description: "Sistema desktop com autenticação, criptografia, filtros de busca e geração de relatórios.",
-    tech: ["Java", "Swing", "SQLite", "JDBC", "MVC"],
     image: "img/cadastro.webp"
   },
- 
+
 ];

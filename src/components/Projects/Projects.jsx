@@ -69,11 +69,6 @@ function ProjectCard({ project, index }) {
           <span className="project-card__tag">{project.tag}</span>
           <h3 className="project-card__title">{project.title}</h3>
           <p className="project-card__desc">{project.description}</p>
-          <div className="project-card__tech">
-            {project.tech.map(tech => (
-              <span key={tech} className="tech-pill">{tech}</span>
-            ))}
-          </div>
         </div>
       </div>
     </div>

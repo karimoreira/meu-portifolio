@@ -157,29 +157,6 @@
   overflow: hidden;
 }
 
-.project-card__tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: auto;
-}
-
-.tech-pill {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 100px;
-  background: rgba(0, 216, 255, 0.08);
-  color: var(--primary);
-  border: 1px solid rgba(0, 216, 255, 0.15);
-  transition: all 0.3s;
-}
-
-.tech-pill:hover {
-  background: rgba(0, 216, 255, 0.15);
-  border-color: rgba(0, 216, 255, 0.3);
-}
-
 .light-theme .tech-pill {
   background: rgba(0, 128, 160, 0.08);
   border-color: rgba(0, 128, 160, 0.15);
