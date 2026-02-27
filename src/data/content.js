@@ -54,7 +54,7 @@ export const projects = [
         id: 6,
         tag: "Segurança de Rede",
         title: "ShieldNet",
-        description: "Plataforma para proteção de redes Wi-Fi contra ataques AirSnitch, com análise de vulnerabilidades e isolamento de rede.",
+        description: "Proteção de redes Wi-Fi contra ataques AirSnitch, com análise de vulnerabilidades e isolamento.",
         image: "/img/project-seguranca.png",
         link: "#",
       },
@@ -76,7 +76,7 @@ export const projects = [
     id: 4,
     tag: "Rede Social",
     title: "Ping",
-    description: "Rede social sem anúncios focada em conexões reais, com curtidas, comentários, compartilhamentos e feed privado para amigos.",
+    description: "Rede social sem anúncios, com curtidas, comentários, compartilhamentos e feed privado.",
     image: "img/ping-rede-social.webp"
   },
     {
@@ -104,7 +104,7 @@ export const projects = [
     id: 8,
     tag: "Biblioteca de Programação",
     title: "Biblioteca Online",
-    description: "Plataforma web para acessar e pesquisar livros de programação com geração automática de metadados.",
+    description: "Acessar, pesquisar e baixar os melhores livros de programação.",
     image: "img/biblioteca-de-livros.png"
   },
   {
