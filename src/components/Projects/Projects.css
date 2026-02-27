@@ -1,5 +1,6 @@
 .projects {
   background: var(--bg);
+  margin-bottom: 96px; 
 }
 
 .projects__container {
