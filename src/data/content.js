@@ -76,13 +76,21 @@ export const projects = [
     tech: ["HTML", "CSS", "Javascript", "Node.js", "SQLite"],
     image: "img/ping-rede-social.webp"
   },
+    {
+      id: 5,
+      tag: "Landing page",
+      title: "SONIQ",
+      description: "Landingpage de vendas de headphone.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      image: "img/soniq.png"
+    },
   {
-    id: 5,
-    tag: "Gerenciador de Tarefas",
-    title: "Taskboard",
-    description: "Gerenciador de tarefas com backend em Spring Boot e frontend em React com TypeScript.",
-    tech: ["Java", "React", "TypeScript", "Axios", "CSS", "H2 Database"],
-    image: "img/taskboard.webp"
+      id: 6,
+      tag: "Gerenciador de Tarefas",
+      title: "Taskboard",
+      description: "Gerenciador de tarefas com backend em Spring Boot e frontend em React com TypeScript.",
+      tech: ["Java", "React", "TypeScript", "Axios", "CSS", "H2 Database"],
+      image: "img/taskboard.webp"
   },
   {
     id: 6,
