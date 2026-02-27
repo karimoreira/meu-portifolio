@@ -116,7 +116,7 @@ export const projects = [
   },
   {
     id: 10,
-    tag: "Java Desktop",
+    tag: "SISTEMA Java Desktop",
     title: "Gestão de Clientes",
     description: "Sistema desktop com autenticação, criptografia, filtros de busca e geração de relatórios.",
     image: "img/cadastro.webp"
