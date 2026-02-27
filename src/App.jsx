@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
+import { GlobalVideoProvider } from './hooks/GlobalVideoContext.jsx';
 import { personalData } from './data/content';
 
 function App() {
